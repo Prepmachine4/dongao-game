@@ -28,9 +28,9 @@ Page({
       },
       
       {
-        title: '关于',
-        name: 'about',
-        icon: 'guanyu',
+        title: '图鉴',
+        name: 'graph',
+        icon: 'tujian',
         color: 'pink'
       },
     ]

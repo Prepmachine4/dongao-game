@@ -1,3 +1,6 @@
+<cu-custom bgColor="bg-gradual-pink" isBack='{{false}}'>
+  <view slot="content">冬奥闯关</view>
+</cu-custom>
 <view class="flex padding justify-center margin-top-xl">
   <view class="cu-avatar round lg" style="background-image:url({{avatarUrl}});">
     <view class="cu-tag badge {{userInfo.gender%2==0?'cuIcon-female bg-pink':'cuIcon-male bg-blue'}}">
