@@ -2,7 +2,7 @@
   "miniprogramRoot": "miniprogram/",
   "cloudfunctionRoot": "cloudfunctions/",
   "setting": {
-    "urlCheck": true,
+    "urlCheck": false,
     "es6": true,
     "enhance": true,
     "postcss": true,
@@ -38,7 +38,7 @@
   },
   "appid": "wx335195ac06a635f4",
   "projectname": "dongao",
-  "libVersion": "2.14.1",
+  "libVersion": "2.19.1",
   "condition": {
     "search": {
       "list": []

@@ -18,8 +18,26 @@
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTitleText": "冬奥闯关",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#2db7f5",
+    "color": "#909090",
+    "list": [
+      {
+        "text": "首页",
+        "iconPath": "images/answer.png",
+        "selectedIconPath": "images/answer-select.png",
+        "pagePath": "pages/index/index"
+      },
+      {
+        "text": "我的",
+        "iconPath": "images/my.png",
+        "selectedIconPath": "images/my-select.png",
+        "pagePath": "pages/index/index"
+      }
+    ]
   },
   "sitemapLocation": "sitemap.json",
   "style": "v2"
