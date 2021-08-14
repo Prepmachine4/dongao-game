@@ -1,2 +1,2 @@
 <!--miniprogram/pages/game/game.wxml-->
-<text>miniprogram/pages/game/game.wxml</text>
+<cu-custom bgColor="bg-gradual-orange" isBack="{{true}}"><view slot="content">开始闯关</view></cu-custom>

@@ -1,2 +1,2 @@
 <!--miniprogram/pages/rank/rank.wxml-->
-<text>miniprogram/pages/rank/rank.wxml</text>
+<cu-custom bgColor="bg-gradual-orange" isBack="{{true}}"><view slot="content">排名</view></cu-custom>

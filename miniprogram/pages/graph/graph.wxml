@@ -1,2 +1,2 @@
 <!--miniprogram/pages/graph/graph.wxml-->
-<text>miniprogram/pages/graph/graph.wxml</text>
+<cu-custom bgColor="bg-gradual-orange" isBack="{{true}}"><view slot="content">我的图鉴</view></cu-custom>

@@ -1,2 +1,2 @@
 <!--miniprogram/pages/study.wxml-->
-<text>miniprogram/pages/study.wxml</text>
+<cu-custom bgColor="bg-gradual-orange" isBack="{{true}}"><view slot="content">冬奥科普</view></cu-custom>
