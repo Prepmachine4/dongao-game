@@ -1,41 +1,34 @@
-<cu-custom bgColor="bg-gradual-pink" isBack='{{false}}'>
-  <view slot="content">冬奥闯关</view>
-</cu-custom>
+<cu-custom bgColor="bg-gradual-orange" isBack="{{false}}"><view slot="content">冬奥闯关</view></cu-custom>
 <view class="flex padding justify-center margin-top-xl">
-  <view class="cu-avatar round lg" style="background-image:url({{avatarUrl}});">
+  <view class="cu-avatar xl round lg" style="background-image:url({{userInfo.avatarUrl?userInfo.avatarUrl:'./user-unlogin'}});">
     <view class="cu-tag badge {{userInfo.gender%2==0?'cuIcon-female bg-pink':'cuIcon-male bg-blue'}}">
     </view>
   </view>
 </view>
 
-<!-- <view class="flex justify-center padding-bottom-xl">
-  <view class="cu-capsule radius padding-right">
-    <view class="cu-tag bg-red">
-      <text>姓名</text>
-    </view>
-    <view class="cu-tag line-red">
-      {{userName}}
+<view style="margin-top: 30rpx;">
+  <block wx:if="{{!hasUserInfo}}">
+    <button class="confirm-btn" wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
+    <button class="confirm-btn" wx:else open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+  </block>
+  <view  wx:else class="flex justify-center padding-bottom-xl">
+    <view class="cu-capsule radius padding-right">
+      <view class="cu-tag bg-red">
+        <text>昵称</text>
+      </view>
+      <view class="cu-tag line-red">
+        {{userInfo.nickName}}
+      </view>
     </view>
   </view>
+</view>
 
-  <view class="cu-capsule radius">
-    <view class="cu-tag bg-blue">
-      <text>班级</text>
-    </view>
-    <view class="cu-tag line-blue">
-      {{userClass}}
-    </view>
-  </view>
-</view> -->
-<text>\n</text>
-<text>\n</text>
-<text>\n</text>
 
- <view class='nav-list margin-top-xl'>
-    <navigator open-type="navigate"  url="/pages/{{item.name}}/{{item.name}}" class="nav-li bg-{{item.color}}" wx:for="{{elements}}" wx:key>
-      <view class="nav-title margin">{{item.title}}</view>
-      <view class="nav-name margin">{{item.name}}</view>
-      <text class='iconfont icon-{{item.icon}} margin'></text>
-    </navigator>
-  </view>
- 
+<view class='nav-list margin-top-xl'>
+  <navigator open-type="navigate" url="/pages/{{item.name}}/{{item.name}}" class="nav-li bg-{{item.color}}"
+    wx:for="{{elements}}" wx:key>
+    <view class="nav-title margin">{{item.title}}</view>
+    <view class="nav-name margin">{{item.name}}</view>
+    <text class='iconfont icon-{{item.icon}} margin'></text>
+  </navigator>
+</view>

@@ -25,14 +25,14 @@
           "scene": null
         },
         {
-          "name": "me",
-          "pathName": "pages/me/me",
+          "name": "feedback",
+          "pathName": "pages/feedback/feedback",
           "query": "",
           "scene": null
         },
         {
-          "name": "feedback",
-          "pathName": "pages/feedback/feedback",
+          "name": "pages/home/home",
+          "pathName": "pages/home/home",
           "query": "",
           "scene": null
         }

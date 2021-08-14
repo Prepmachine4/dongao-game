@@ -5,20 +5,12 @@ Page({
 
   data: {
     imgList: [],
-    userInfo: '',
+    userInfo:{},
     commentContent: '',
   },
 
   onLoad: function(options) {
-    db.collection('userInfo').get({
-      success: e => {
-        this.setData({
-          userInfo: e.data[0].userInfo
-        })
-        console.log(e.data[0].userInfo)
-      },
-      fail: console.error
-    })
+    this.setData({userInfo:wx.getStorageSync('userInfo')})
   },
 
   submit: function(res) {

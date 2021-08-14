@@ -2,16 +2,17 @@
   "pages": [
     "pages/index/index",
     "pages/feedback/feedback",
-    "pages/me/me"
-
+    "pages/home/home",
+    "pages/study",
+    "pages/rank/rank",
+    "pages/graph/graph",
+    "pages/game/game"
   ],
   "window": {
-    "backgroundColor": "#F6F6F6",
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "云答题",
-    "navigationBarTextStyle": "black",
-    "navigationStyle": "custom"
+    "navigationBarBackgroundColor": "#39b54a",
+    "navigationBarTitleText": "冬奥答题闯关",
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white"
   },
   "tabBar": {
     "selectedColor": "#2db7f5",
@@ -27,12 +28,12 @@
         "text": "我的",
         "iconPath": "images/my.png",
         "selectedIconPath": "images/my-select.png",
-        "pagePath": "pages/me/me"
+        "pagePath": "pages/home/home"
       }
     ]
   },
   "usingComponents": {
-    "cu-custom": "/colorui/components/cu-custom"
+    "cu-custom": "./colorui/components/cu-custom"
   },
   "sitemapLocation": "sitemap.json",
   "style": "v2"

@@ -1,6 +1,4 @@
-<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
-  <view slot="content">反馈</view>
-</cu-custom>
+
 
 
 <view class="cu-list menu-avatar solid-bottom">
