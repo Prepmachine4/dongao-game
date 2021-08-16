@@ -10,12 +10,12 @@
   </view>
   <view class="padding flex text-center text-grey bg-white shadow-warp">
     <view class="flex flex-sub flex-direction solid-right">
-      <view class="text-xxl text-blue">{{starCount}}</view>
+      <view class="text-xxl text-blue">{{dbUserInfo.score}}</view>
       <view class="margin-top-sm">
         <text class="cuIcon-favorfill"></text> 积分</view>
     </view>
     <view class="flex flex-sub flex-direction">
-      <view class="text-xxl text-green">{{forksCount}}</view>
+      <view class="text-xxl text-green">{{dbUserInfo.rank}}</view>
       <view class="margin-top-sm">
         <text class="iconfont icon-paihangbang"></text> 排名</view>
     </view>
@@ -46,5 +46,9 @@
       </button>
     </view>
   </view>
-  <view class="cu-tabbar-height"></view>
+  <view class="copyright">
+  <view class="text-grey text-shadow text-center" >copyright©2021-2022 All Rights Reserved.</view>
+	<view class="text-grey text-shadow text-center" >缘梦冬奥跃创实践团</view>
+</view>
 </scroll-view>
+

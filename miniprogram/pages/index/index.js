@@ -35,8 +35,8 @@ Page({
       },
     ]
   },
-
   onLoad: function(options) {
+    let that=this
     if (wx.getUserProfile) {
       this.setData({
         canIUseGetUserProfile: true
@@ -46,6 +46,16 @@ Page({
       this.setData({hasUserInfo:true,userInfo:wx.getStorageSync('userInfo')})
     }
 
+    // 同步本地和数据库中的userInfo
+    if(this.data.hasUserInfo&&!wx.getStorageSync('dbUserInfo').userInfo){
+      console.log(111)
+      wx.cloud.callFunction({
+        name:"updateUserInfo",
+        data:{
+          userInfo:that.data.userInfo
+        },
+      })
+    }
   },
   getUserProfile(e) {
     // 推荐使用wx.getUserProfile获取用户信息，开发者每次通过该接口获取用户个人信息均需用户确认

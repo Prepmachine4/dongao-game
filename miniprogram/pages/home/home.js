@@ -4,12 +4,21 @@ Component({
   },
   data: {
     userInfo:{},
+    dbUserInfo:{},
     starCount: 0,
     forksCount: 0,
     visitTotal: 0,
   },
+  pageLifetimes:{
+    show(){
+      this.setData({
+        userInfo:wx.getStorageSync('userInfo'),
+        dbUserInfo:wx.getStorageSync('dbUserInfo')
+
+      })
+    }
+  },
   attached() {
-    this.setData({userInfo:wx.getStorageSync('userInfo')})
     console.log("success")
     let that = this;
     wx.showLoading({

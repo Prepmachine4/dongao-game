@@ -25,7 +25,14 @@ App({
 		}
       }
     })
-    getUserProfile()
+
+    // 获取数据库用户信息
+    wx.cloud.callFunction({name:"login",data:{userInfo:wx.getStorageSync('userInfo')}}).then(
+      (res)=>{
+        let data=res.result.data[0]
+        wx.setStorageSync('dbUserInfo', data)
+      }
+    )
   },
   globalData: {
     ColorList: [{
@@ -104,23 +111,5 @@ App({
         color: '#ffffff'
       },
     ]
-  },
-  getUserProfile() {
-    var that = this;
-    wx.getUserProfile({
-      desc: '完善用户信息',
-      success: (res) => {
-        wx.u.getUserInfo().then(res1 => {
-          var bmobUser = res1.result;
-          if (bmobUser.avatarUrl == '' || bmobUser.avatarUrl == undefined) {
-            wx.u.changeUserInfo(res.userInfo.avatarUrl, res.userInfo.nickName).then(res2 => { });
-          }
-        })
-        that.setData({
-          userInfo: res.userInfo
-        })
-        wx.setStorageSync('userInfo', res.userInfo)
-      }
-    })
   },
 })

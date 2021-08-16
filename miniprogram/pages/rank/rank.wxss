@@ -1,1 +1,4 @@
-/* miniprogram/pages/rank/rank.wxss */
+.cu-item{
+  margin-bottom: 15rpx;
+  border-radius: 30rpx;
+}
