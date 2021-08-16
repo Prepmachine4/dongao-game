@@ -1,13 +1,7 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/study/study",
-    "pages/feedback/feedback",
-    "pages/home/home",
-    "pages/rank/rank",
-    "pages/graph/graph",
-    "pages/game/game",
-    "pages/study/article/article"
+    "pages/home/home"
   ],
   "window": {
     "navigationBarBackgroundColor": "#39b54a",
