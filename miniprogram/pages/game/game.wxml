@@ -1,7 +1,19 @@
 <!--miniprogram/pages/game/game.wxml-->
-<cu-custom bgColor="bg-gradual-orange" isBack="{{true}}"><view slot="content">开始闯关</view></cu-custom>
+<cu-custom bgColor="bg-gradual-orange" isBack="{{true}}">
+  <view slot="content">开始闯关</view>
+</cu-custom>
+
 
 
 <view class="bg-img" style="background-image: url('../../images/background.png');height:95vh;">
+  <scroll-view scroll-x class="response cu-steps steps-bottom" scroll-into-view="scroll-{{dbUserInfo.level-2}}"
+    scroll-with-animation>
+    <view class="cu-item {{index+2>(dbUserInfo.level?dbUserInfo.level:0)?'':'text-orange text-bold'}} padding-lr-xl" wx:for="{{6}}" wx:key id="scroll-{{index}}">
+      关卡 {{index + 1}} <text class="num " data-index="{{index + 1}}"></text>
+    </view>
+  </scroll-view>
 
+  <view class="buttom-bar">
+    <button bindtap="goQA" class="cu-btn round lg bg-olive">开始闯关</button>
+  </view>
 </view>

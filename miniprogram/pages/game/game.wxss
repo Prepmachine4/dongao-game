@@ -1,1 +1,14 @@
 /* miniprogram/pages/game/game.wxss */
+.bg-img{
+  position: relative;
+}
+.buttom-bar{
+  width: 100vw;
+  position: absolute;
+  bottom: 2%;
+  text-align: center;
+}
+scroll-view{
+  position: absolute;
+  top: 0%;
+}

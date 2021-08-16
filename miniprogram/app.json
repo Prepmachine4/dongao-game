@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/home/home"
+    "pages/home/home",
+    "pages/game/QA/QA"
   ],
   "window": {
     "navigationBarBackgroundColor": "#39b54a",
@@ -28,8 +29,11 @@
     ]
   },
   "usingComponents": {
-    "cu-custom": "./colorui/components/cu-custom"
+    "cu-custom": "./colorui/components/cu-custom",
+    "van-circle": "miniprogram_npm/@vant/weapp/circle/index",
+    "van-count-down": "miniprogram_npm/@vant/weapp/count-down/index",
+    "van-button": "miniprogram_npm/@vant/weapp/button/index"
+
   },
-  "sitemapLocation": "sitemap.json",
-  "style": "v2"
+  "sitemapLocation": "sitemap.json"
 }

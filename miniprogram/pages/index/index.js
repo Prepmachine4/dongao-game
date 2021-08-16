@@ -1,8 +1,4 @@
-const db = wx.cloud.database();
 Page({
-  options: {
-    addGlobalClass: true,
-  },
   data: {
 
     userInfo: {},
@@ -35,7 +31,7 @@ Page({
       },
     ]
   },
-  onLoad: function(options) {
+  onLoad: function() {
     let that=this
     if (wx.getUserProfile) {
       this.setData({

@@ -1,0 +1,73 @@
+<cu-custom bgColor="bg-gradual-orange" isBack="{{false}}">
+  <view slot="content">答题</view>
+</cu-custom>
+<!-- 背景图 -->
+<image class="background" src="../../../images/QAback.png" mode="scaleToFill"></image>
+
+
+<view class="flex margin-top-xs padding-right padding-left">
+  <view class="cu-progress round bg-white">
+    <view class="bg-green" style="width: {{(QAindex+1)/5*100}}%;"></view>
+  </view>
+  <text class="margin-left">{{(QAindex+1)/5*100}}%</text>
+</view>
+
+
+<view class="flex justify-center margin-top-sm">
+  <van-circle size="80" value="{{ value }}" color="{{ gradientColor }}" layer-color="#fff" clockwise="{{ true }}"
+    type="2d" speed="100">
+    <van-count-down class="control-count-down" millisecond time="{{ 10000 }}" auto-start="{{ false }}" format="ss:SSS"
+      bind:finish="finished"></van-count-down>
+  </van-circle>
+</view>
+
+
+<view class="cu-card case ">
+  <view class="cu-item shadow">
+    <view class="image">
+      <image class='png' src="../../../images/tiwenkuang.png" mode="widthFix"></image>
+      <view class="cu-bar question">
+        <text class="text-content ">{{QAList[QAindex].title}}</text>
+      </view>
+    </view>
+  </view>
+
+</view>
+
+
+
+<radio-group class="cu-list menu sm-border card-menu" bindchange="changeSelect">
+  <view class="cu-form-group" wx:for="{{QAList[QAindex].choose_list}}" wx:key="id">
+    <view class="title">{{item}}</view>
+    <radio value="{{index}}" class="radio"></radio>
+  </view>
+</radio-group>
+
+<view class="padding-xl">
+  <van-button  bind:click="goToNextQuestion" round="true" size="large" color="linear-gradient(to right, #0081ff, #1cbbb4)" disabled="{{ansIndex==-1?true:false}}">
+    下一题
+  </van-button>
+</view>
+
+<!-- 遮罩层 -->
+<view class="cu-modal {{modalShow==true?'show':''}}">
+  <view class="cu-dialog">
+    <view class="cu-bar bg-white justify-end">
+      <view class="content">答题结果</view>
+      <view class="action" bindtap="hideModal">
+        <text class="cuIcon-close text-red"></text>
+      </view>
+    </view>
+    <view class="padding-xl">
+      您答对了{{dbResData.correct}}个题，获得了{{dbResData.score}}分
+      <view>\n</view>
+      <view wx:if="{{dbResData.correct>=4}}" class="text-green text-bold">闯关成功</view>
+      <view wx:else class="text-red text-bold">闯关失败</view>
+    </view>
+    <view class="cu-bar bg-white justify-end">
+      <view class="action">
+        <button class="cu-btn bg-green margin-left" bindtap="hideModal">确定</button>
+      </view>
+    </view>
+  </view>
+</view>

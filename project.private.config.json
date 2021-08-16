@@ -13,20 +13,8 @@
     "miniprogram": {
       "list": [
         {
-          "id": -1,
-          "name": "db guide",
-          "pathName": "pages/databaseGuide/databaseGuide",
-          "query": ""
-        },
-        {
           "name": "index",
           "pathName": "pages/index/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "feedback",
-          "pathName": "pages/feedback/feedback",
           "query": "",
           "scene": null
         },
@@ -37,21 +25,15 @@
           "scene": null
         },
         {
-          "name": "pages/rank/rank",
-          "pathName": "pages/rank/rank",
-          "query": "",
-          "scene": null
-        },
-        {
           "name": "pages/game/game",
           "pathName": "pages/game/game",
           "query": "",
           "scene": null
         },
         {
-          "name": "pages/study/study",
-          "pathName": "pages/study/study",
-          "query": "",
+          "name": "pages/game/QA/QA",
+          "pathName": "pages/game/QA/QA",
+          "query": "level=1&QAindex=1",
           "scene": null
         }
       ]

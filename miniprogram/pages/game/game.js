@@ -1,66 +1,42 @@
-// miniprogram/pages/game/game.js
+// 每次onshow这个页面需要更新用户信息
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    var that=this
+    // 获取新的用户信息
+    wx.cloud.callFunction({name:"login",data:{userInfo:wx.getStorageSync('userInfo')}}).then(
+      (res)=>{
+        let data=res.result.data[0]
+        wx.setStorageSync('dbUserInfo', data)
+        that.setData({
+          userInfo:wx.getStorageSync('userInfo'),
+          dbUserInfo:wx.getStorageSync('dbUserInfo'),
+        })
+        wx.showToast({
+          title: '即将挑战第'+that.data.dbUserInfo.level+'关',
+        })
+      }
+    )
+
     
-  },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
+    // 渲染页面
 
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  goQA(e){
+    let level=e.currentTarget.dataset.id
+    let anslist=JSON.stringify([])
+    wx.navigateTo({
+      url: `QA/QA?level=${level}&QAindex=${0}&ansList=${anslist}`,
+    })
   }
 })
