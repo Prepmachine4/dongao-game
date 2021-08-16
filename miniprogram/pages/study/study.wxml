@@ -1,2 +1,110 @@
 <!--miniprogram/pages/study.wxml-->
-<cu-custom bgColor="bg-gradual-orange" isBack="{{true}}"><view slot="content">冬奥科普</view></cu-custom>
+
+
+
+<cu-custom bgColor="bg-gradual-pink" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">冬奥知识</view>
+</cu-custom>
+<view class="cu-bar bg-white solid-bottom margin-top">
+  <view class='action'>
+    <text class='cuIcon-titles text-orange '></text> 最新奥运图片
+  </view>
+</view>
+<swiper class="screen-swiper {{DotStyle?'square-dot':'round-dot'}}" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500">
+  <swiper-item wx:for="{{swiperList}}" wx:key>
+    <image src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
+    <video src="{{item.url}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover" wx:if="{{item.type=='video'}}"></video>
+  </swiper-item>
+</swiper>
+
+<view class="cu-bar bg-white solid-bottom margin-top">
+  <view class='action'>
+    <text class='cuIcon-titles text-orange '></text> 奥运小知识
+  </view>
+</view>
+<view class="cu-card article {{isCard?'no-card':''}}" bindtap="goto" data-id="1">
+  <view class="cu-item shadow">
+    <view class="title">
+      <view class="text-cut">冬奥历史</view>
+    </view>
+    <view class="content">
+      <image src="https://p0.ssl.img.360kuai.com/t01f2970ccd1e2534ee.webp" mode="aspectFill"></image>
+      <view class="desc">
+        <view class="text-content"> 折磨生出苦难，苦难又会加剧折磨，凡间这无穷的循环，将有我来终结！真正的恩典因不完整而美丽，因情感而真诚，因脆弱而自由！</view>
+        <view>
+          <view class="cu-tag bg-red light sm round">缘梦冬奥跃创实践团</view>
+          <view class="cu-tag bg-green light sm round">史诗</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="cu-card article {{isCard?'no-card':''}}">
+  <view class="cu-item shadow">
+    <view class="title">
+      <view class="text-cut">北京冬奥</view>
+    </view>
+    <view class="content">
+      <image src="https://p0.ssl.img.360kuai.com/t01f2970ccd1e2534ee.webp" mode="aspectFill"></image>
+      <view class="desc">
+        <view class="text-content"> 折磨生出苦难，苦难又会加剧折磨，凡间这无穷的循环，将有我来终结！真正的恩典因不完整而美丽，因情感而真诚，因脆弱而自由！</view>
+        <view>
+          <view class="cu-tag bg-red light sm round">缘梦冬奥跃创实践团</view>
+          <view class="cu-tag bg-green light sm round">史诗</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="cu-card article {{isCard?'no-card':''}}">
+  <view class="cu-item shadow">
+    <view class="title">
+      <view class="text-cut">冬奥项目</view>
+    </view>
+    <view class="content">
+      <image src="https://p0.ssl.img.360kuai.com/t01f2970ccd1e2534ee.webp" mode="aspectFill"></image>
+      <view class="desc">
+        <view class="text-content"> 折磨生出苦难，苦难又会加剧折磨，凡间这无穷的循环，将有我来终结！真正的恩典因不完整而美丽，因情感而真诚，因脆弱而自由！</view>
+        <view>
+          <view class="cu-tag bg-red light sm round">缘梦冬奥跃创实践团</view>
+          <view class="cu-tag bg-green light sm round">史诗</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="cu-card article {{isCard?'no-card':''}}">
+  <view class="cu-item shadow">
+    <view class="title">
+      <view class="text-cut">冬奥场馆</view>
+    </view>
+    <view class="content">
+      <image src="https://p0.ssl.img.360kuai.com/t01f2970ccd1e2534ee.webp" mode="aspectFill"></image>
+      <view class="desc">
+        <view class="text-content"> 折磨生出苦难，苦难又会加剧折磨，凡间这无穷的循环，将有我来终结！真正的恩典因不完整而美丽，因情感而真诚，因脆弱而自由！</view>
+        <view>
+          <view class="cu-tag bg-red light sm round">缘梦冬奥跃创实践团</view>
+          <view class="cu-tag bg-green light sm round">史诗</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="cu-card article {{isCard?'no-card':''}}">
+  <view class="cu-item shadow">
+    <view class="title">
+      <view class="text-cut">最新进展</view>
+    </view>
+    <view class="content">
+      <image src="https://p0.ssl.img.360kuai.com/t01f2970ccd1e2534ee.webp" mode="aspectFill"></image>
+      <view class="desc">
+        <view class="text-content"> 折磨生出苦难，苦难又会加剧折磨，凡间这无穷的循环，将有我来终结！真正的恩典因不完整而美丽，因情感而真诚，因脆弱而自由！</view>
+        <view>
+          <view class="cu-tag bg-red light sm round">缘梦冬奥跃创实践团</view>
+          <view class="cu-tag bg-green light sm round">史诗</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,4 +1,4 @@
-// pages/study.js
+// miniprogram/pages/study/article/article.js
 Page({
 
   /**

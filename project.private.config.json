@@ -47,6 +47,12 @@
           "pathName": "pages/game/game",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/study/study",
+          "pathName": "pages/study/study",
+          "query": "",
+          "scene": null
         }
       ]
     }
