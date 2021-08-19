@@ -1,8 +1,8 @@
-<cu-custom bgColor="bg-gradual-orange" isBack="{{false}}">
+<cu-custom bgColor="bg-gradual-orange" isBack="{{false}}" isHome="{{true}}">
   <view slot="content">答题</view>
 </cu-custom>
 <!-- 背景图 -->
-<image class="background" src="../../../images/QAback.png" mode="scaleToFill"></image>
+<image class="background" src="https://6465-dev-5gb1g863bb2952f3-1306936285.tcb.qcloud.la/images/QAback.png?sign=758960dfdf25af43ca62808f8cb8e676&t=1629380592" mode="scaleToFill"></image>
 
 
 <view class="flex margin-top-xs padding-right padding-left">
@@ -22,24 +22,21 @@
 </view>
 
 
-<view class="cu-card case ">
-  <view class="cu-item shadow">
-    <view class="image">
-      <image class='png' src="../../../images/tiwenkuang.png" mode="widthFix"></image>
-      <view class="cu-bar question">
-        <text class="text-content ">{{QAList[QAindex].title}}</text>
-      </view>
-    </view>
-  </view>
 
+<view class="image tiwenkuang margin-lg">
+  <image class='png' src="https://6465-dev-5gb1g863bb2952f3-1306936285.tcb.qcloud.la/images/tiwenkuang.png?sign=649f8cf9cde710817ae024350b2f1546&t=1629380615" mode="widthFix"></image>
+  <view class="cu-bar question">
+    <text class="text-content ">{{QAList[QAindex].title}}</text>
+  </view>
 </view>
 
 
 
+
 <radio-group class="cu-list menu sm-border card-menu" bindchange="changeSelect">
-  <view class="cu-form-group" wx:for="{{QAList[QAindex].choose_list}}" wx:key="id">
-    <view class="title">{{item}}</view>
-    <radio value="{{index}}" class="radio"></radio>
+  <view class="cu-form-group flex" style="text-align: center;" wx:for="{{QAList[QAindex].choose_list}}" wx:key="id">
+    <radio value="{{index}}" class="radio flex-sub"></radio>
+    <view class="title flex-treble" >{{item}}</view>
   </view>
 </radio-group>
 

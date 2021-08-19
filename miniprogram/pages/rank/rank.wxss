@@ -1,4 +1,15 @@
 .cu-item{
+  position: relative;
   margin-bottom: 15rpx;
   border-radius: 30rpx;
+}
+.cu-list.menu>.cu-item{
+  justify-content: flex-start;
+}
+.text-df{
+  margin: 0rpx 30rpx;
+}
+.text-red{
+  position: absolute;
+  right: 70rpx;
 }

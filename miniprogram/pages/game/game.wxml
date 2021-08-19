@@ -5,7 +5,7 @@
 
 
 
-<view class="bg-img" style="background-image: url('../../images/background.png');height:95vh;">
+<view class="bg-img" style="background-image: url('https://6465-dev-5gb1g863bb2952f3-1306936285.tcb.qcloud.la/images/background.png?sign=ab45d3ff9213938f517ea27be606be4b&t=1629380515');height:95vh;">
   <scroll-view scroll-x class="response cu-steps steps-bottom" scroll-into-view="scroll-{{dbUserInfo.level-2}}"
     scroll-with-animation>
     <view class="cu-item {{index+2>(dbUserInfo.level?dbUserInfo.level:0)?'':'text-orange text-bold'}} padding-lr-xl" wx:for="{{6}}" wx:key id="scroll-{{index}}">

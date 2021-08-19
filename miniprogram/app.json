@@ -32,7 +32,8 @@
     "cu-custom": "./colorui/components/cu-custom",
     "van-circle": "miniprogram_npm/@vant/weapp/circle/index",
     "van-count-down": "miniprogram_npm/@vant/weapp/count-down/index",
-    "van-button": "miniprogram_npm/@vant/weapp/button/index"
+    "van-button": "miniprogram_npm/@vant/weapp/button/index",
+    "van-share-sheet": "miniprogram_npm/@vant/weapp/share-sheet/index"
 
   },
   "sitemapLocation": "sitemap.json"

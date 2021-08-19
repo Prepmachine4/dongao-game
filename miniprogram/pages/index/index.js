@@ -32,6 +32,11 @@ Page({
     ]
   },
   onLoad: function() {
+    wx.showShareMenu({
+      withShareTicket: false,
+      menus: ['shareAppMessage', 'shareTimeline']
+    })
+    
     let that=this
     if (wx.getUserProfile) {
       this.setData({
@@ -52,6 +57,8 @@ Page({
         },
       })
     }
+
+    
   },
   getUserProfile(e) {
     // 推荐使用wx.getUserProfile获取用户信息，开发者每次通过该接口获取用户个人信息均需用户确认

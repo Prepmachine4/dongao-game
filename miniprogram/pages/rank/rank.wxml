@@ -1,12 +1,12 @@
 <cu-custom bgColor="bg-gradual-orange" isBack="{{true}}"><view slot="content">排行榜</view></cu-custom>
 <scroll-view scroll-y class="scrollPage">
-  <view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg">
+  <view class="cu-list  menu card-menu margin-top-xl margin-bottom-xl shadow-lg">
 
-    <view class="cu-item" wx:for="{{rankList}}" wx:key="id">
-        <view>{{index+1}}</view>
+    <view class="cu-item " wx:for="{{rankList}}" wx:key="id">
+        <view >{{index+1}}</view>
         <image src="{{item.userInfo.avatarUrl}}" class="cu-avatar round margin-left" mode="aspectFit"></image>
-        <text class="text-df">{{item.userInfo.nickName}}</text>
-        <view class="text-red">获得{{item.score}}分</view>
+        <text class="text-df ">{{item.userInfo.nickName}}</text>
+        <view class="text-red ">获得{{item.score}}分</view>
     </view>
   </view>
 </scroll-view>
@@ -15,6 +15,6 @@
 <!-- 加载遮罩层 -->
 <view class='cu-load load-modal' style="border-radius: 30rpx;" wx:if="{{loadModal}}">
   <!-- <view class='cuIcon-emojifill text-orange'></view> -->
-  <image src='/images/logo.png' class='png' mode='aspectFit'></image>
+  <image src='https://6465-dev-5gb1g863bb2952f3-1306936285.tcb.qcloud.la/images/logo.png?sign=1b4e484c4669ffda1f55218c9742bf35&t=1629385345' class='png' mode='aspectFit'></image>
   <view class='gray-text'>加载中...</view>
 </view>

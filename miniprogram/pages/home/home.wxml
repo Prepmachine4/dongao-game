@@ -23,7 +23,7 @@
   <view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
     <view class="cu-item arrow">
       <navigator class="content" url="/pages/home/about/about" hover-class="none">
-        <image src="/images/logo.png" class="png" mode="aspectFit"></image>
+        <image src="https://6465-dev-5gb1g863bb2952f3-1306936285.tcb.qcloud.la/images/logo.png?sign=c5811c56760180abfcdf30e446802ff8&t=1629380672" class="png" mode="aspectFit"></image>
         <text class="text-grey">关于我们</text>
       </navigator>
     </view>
@@ -43,6 +43,12 @@
       <button class="cu-btn content" open-type="feedback">
         <text class="cuIcon-writefill text-cyan"></text>
         <text class="text-grey" style=" font-weight: 300;">意见反馈</text>
+      </button>
+    </view>
+    <view class="cu-item arrow">
+      <button class="cu-btn content" open-type="share">
+        <text class="cuIcon-share text-blue"></text>
+        <text class="text-grey" style=" font-weight: 300;">分享</text>
       </button>
     </view>
   </view>

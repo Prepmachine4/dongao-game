@@ -37,77 +37,53 @@ Page({
       QAList:wx.getStorageSync('QAList'),
       level:Number(options.level),
       QAindex:Number(options.QAindex),
-      ansList:JSON.parse(options.ansList)
+      ansList:[]
     })
 
     // 加载获取题目数据
-    if(!that.data.QAList){
-      wx.cloud.callFunction({
-        name:"getQAList"
-      }).then((res)=>{
-        that.setData({QAList:res.result})
-        wx.setStorageSync('QAList', res.result)
-        //所有页面加载完毕 开启倒计时旋转框监听
-        let addValue= function(){
-          that.setData({value:that.data.value+10})
-          return addValue;
-        }
-        that.setData({
-          timerNumber:setInterval(addValue(),1000)
-        })
-        let countDown=that.selectComponent('.control-count-down');
-        countDown.start();
-      })
-    }
-    else{
+    wx.cloud.callFunction({
+      name:"getQAList"
+    }).then((res)=>{
+      that.setData({QAList:res.result})
       //所有页面加载完毕 开启倒计时旋转框监听
       let addValue= function(){
         that.setData({value:that.data.value+10})
-        return addValue;
-      }
+      } 
       that.setData({
-        timerNumber:setInterval(addValue(),1000)
+        timerNumber:setInterval(addValue,1000)
       })
       let countDown=that.selectComponent('.control-count-down');
       countDown.start();
-    }
-
-    
-
-
-    
+    })
   },
   // 自定义函数
   finished(e){
-    // 如果已经提交了 防止重复提交
-    if(this.data.hasCommit) {
-
-      return;
-    }
-    clearInterval(this.data.timerNumber)
-
-
-    wx.showToast({
-      title: '时间已截止',
-      icon:"error",
-      duration:2000,
-      success:()=>{
-        this.goToNextQuestion()
-      }
-    })
+    this.goToNextQuestion()
   },
   goToNextQuestion(){
     clearInterval(this.data.timerNumber)
     var that=this
-    // 保存结果，传递ansList
+    // 保存结果
     this.data.ansList.push(this.data.ansIndex.value)
-    let anslist=JSON.stringify(this.data.ansList)
     // 不提交
     if(this.data.QAindex<4){
-      // 跳转下一题
-      wx.redirectTo({
-        url: `../QA/QA?level=${this.data.level}&QAindex=${this.data.QAindex+1}&ansList=${anslist}`,
-    })
+      // 局部刷新
+      that.setData({
+        QAindex:that.data.QAindex+1,
+        value:0
+      })
+
+      //所有页面加载完毕 开启倒计时旋转框监听
+      let addValue= function(){
+        that.setData({value:that.data.value+10})
+      }
+      that.setData({
+        timerNumber:setInterval(addValue,1000)
+      })
+      const countDown = this.selectComponent('.control-count-down');
+      countDown.reset()
+      countDown.start()
+
     }
     //提交结果 数据校验等待3秒后返回
     else{
@@ -118,8 +94,6 @@ Page({
       that.data.QAList.forEach((item,i)=>{
         item.answer=that.data.ansList[i]
       })
-      console.log("submit");
-
       wx.showToast({
         icon:"loading",
         title: '提交数据中',

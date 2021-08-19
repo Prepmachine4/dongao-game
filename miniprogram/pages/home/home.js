@@ -5,9 +5,7 @@ Component({
   data: {
     userInfo:{},
     dbUserInfo:{},
-    starCount: 0,
-    forksCount: 0,
-    visitTotal: 0,
+    
   },
   pageLifetimes:{
     show(){
@@ -15,6 +13,10 @@ Component({
         userInfo:wx.getStorageSync('userInfo'),
         dbUserInfo:wx.getStorageSync('dbUserInfo')
 
+      })
+      wx.showShareMenu({
+        withShareTicket: false,
+        menus: ['shareAppMessage', 'shareTimeline']
       })
     }
   },
