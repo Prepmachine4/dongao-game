@@ -5,6 +5,33 @@ Page({
    * 页面的初始数据
    */
   data: {
+    steps: [
+      {
+        text: '第一关',
+        activeIcon: 'location-o'
+
+      },
+      {
+        text: '第二关',
+        activeIcon: 'location-o'
+      },
+      {
+        text: '第三关',
+        activeIcon: 'location-o'
+      },
+      {
+        text: '第四关',
+        activeIcon: 'location-o'
+      },
+      {
+        text: '第五关',
+        activeIcon: 'location-o'
+      },
+      {
+        text: '第六关',
+        activeIcon: 'location-o'
+      }
+    ],
   },
 
   /**

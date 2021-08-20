@@ -1,11 +1,11 @@
 <cu-custom bgColor="bg-gradual-green" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">关于</view></cu-custom>
 <view class='margin-xl bg-white padding-xl radius shadow-lg'>
-  <view class='text-center margin-bottom text-lg  text-grey'>关于我们实践团</view>
+  <view class='text-center margin-bottom text-lg  text-grey'>关于缘梦冬奥跃创调研宣讲实践团</view>
   <view class='text-content'>
-    <view>Hi！开发者~欢迎使用ColorUI组件库！</view>
-    <view class='margin-top-sm'>该项目是我个人开发的一款高颜值的微信小程序组件库。这个项目不仅有一些漂亮的基础元素，还有一些实用的组件。扩展中心也会不定期更新一些小程序的解决方案，或者你有一些好的想法可以在GitHub里提交给我，我会加入到扩展里。</view>
-    <view class='margin-top-sm'>项目是开源的，不收取任何费用，如果这个项目有帮到你，或者你觉得很赞，可以在GitHub里扫描赞赏码支持一下！</view>
-    <view class='margin-top-sm'>该项目你可以用到除组件库小程序的任何项目。作者我也是花了时间和精力的，我不希望你拷贝一份，做一些修改发布就变成了一个独立的项目，当然！扩展再发布是可以的，但前提是注明一下我这个原作者٩(๑❛ᴗ❛๑)۶</view>
-    <view class='margin-top-sm'>更多功能敬请期待！</view>
+    <view>2022年北京冬奥会是我国重要历史节点的重大标志性活动，是展现国家形象、促进国家发展、振奋民族精神的重要契机。</view>
+    <view class='margin-top-sm'>作为五棵松体育中心的主责高校，在做好疫情防控工作的前提下，我校也选派师生全程参与冬奥测试赛的服务与保障工作，圆满完成观众压力测试任务，受到场馆运行团队和北京冬奥组委有关部门高度评价。</view>
+    <view class='margin-top-sm'>北京科技大学缘梦冬奥跃创调研宣讲实践团将2022年北京冬奥会与暑期社会实践相结合，充分依托北科大作为冬奥场馆主责高校的平台优势，以弘扬奥运精神、助力冬奥为实践宗旨，深入调研冬奥科技方面相关成果进展，结合专业知识开展实践，助力绿色办奥、共享办奥、开放办奥、廉洁办奥。</view>
+    <view class='margin-top-sm '>在充分了解北京冬奥科技方面相关成就的基础上，通过创新思想、技术开发等方式，预计采用包括小程序、网页、小游戏等形式展现调研成果，借此针对于科技方向开展冬奥科普宣传，助力营造冬奥氛围、推广冬奥文化、传承冬奥精神。</view>
+    <view class='margin-top-sm '>敬请期待！</view>
   </view>
 </view>

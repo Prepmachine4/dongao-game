@@ -23,7 +23,8 @@ Page({
     timerNumber:null,
     hasCommit:false,
     modalShow:false,
-    time:0
+    time:0,
+    checkedBox:[false,false,false,false]
   },
 
   /**
@@ -68,13 +69,15 @@ Page({
     clearInterval(this.data.timerNumber)
     var that=this
     // 保存结果
-    this.data.ansList.push(this.data.ansIndex.value)
+    this.data.ansList.push(this.data.ansIndex)
     // 不提交
     if(this.data.QAindex<4){
       // 局部刷新
       that.setData({
         QAindex:that.data.QAindex+1,
-        value:0
+        value:0,
+        ansIndex:-1,
+        checkedBox:[false,false,false,false]
       })
 
       //所有页面加载完毕 开启倒计时旋转框监听
@@ -128,10 +131,13 @@ Page({
       delta: 1,
     })
   },
-  changeSelect(e){
-    let index=e.detail
-    this.setData({
-      ansIndex:index
-    })
+  // 用户选择选项
+  touch(e){
+    let index=e.currentTarget.dataset.id;
+    let checkedBox=this.data.checkedBox
+    for (let i = 0; i < checkedBox.length; i++) {
+      checkedBox[i]=(i==index?true:false)
+    }
+    this.setData({checkedBox:checkedBox,ansIndex:index})
   }
 })

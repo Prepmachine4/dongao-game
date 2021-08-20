@@ -25,3 +25,6 @@
   position: absolute;
   bottom: 0;
 }
+.text-content view{
+  text-indent: 2em;
+}

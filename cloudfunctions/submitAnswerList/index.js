@@ -50,7 +50,7 @@ exports.main = async (event, context) => {
   }
 
   return {
-    score:score,
+    score:score.toFixed(2),
     correct:correct
   }
 }

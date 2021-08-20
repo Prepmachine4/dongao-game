@@ -34,8 +34,8 @@
 
 
 <radio-group class="cu-list menu sm-border card-menu" bindchange="changeSelect">
-  <view class="cu-form-group flex" style="text-align: center;" wx:for="{{QAList[QAindex].choose_list}}" wx:key="id">
-    <radio value="{{index}}" class="radio flex-sub"></radio>
+  <view bindtap="touch" data-id="{{index}}" class="cu-form-group flex" style="text-align: center;" wx:for="{{QAList[QAindex].choose_list}}" wx:key="id">
+    <radio checked="{{checkedBox[index]}}" value="{{index}}" class="radio flex-sub"></radio>
     <view class="title flex-treble" >{{item}}</view>
   </view>
 </radio-group>

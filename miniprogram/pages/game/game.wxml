@@ -3,17 +3,15 @@
   <view slot="content">开始闯关</view>
 </cu-custom>
 
+<view class="container">
+  <view class="bg-img"
+    style="background-image: url('https://6465-dev-5gb1g863bb2952f3-1306936285.tcb.qcloud.la/images/background.png?sign=ab45d3ff9213938f517ea27be606be4b&t=1629380515');height:95vh;">
+    <van-steps steps="{{ steps }}" active="{{ dbUserInfo.level-1 }}" direction="vertical" active-color="#f37b1d" />
 
-
-<view class="bg-img" style="background-image: url('https://6465-dev-5gb1g863bb2952f3-1306936285.tcb.qcloud.la/images/background.png?sign=ab45d3ff9213938f517ea27be606be4b&t=1629380515');height:95vh;">
-  <scroll-view scroll-x class="response cu-steps steps-bottom" scroll-into-view="scroll-{{dbUserInfo.level-2}}"
-    scroll-with-animation>
-    <view class="cu-item {{index+2>(dbUserInfo.level?dbUserInfo.level:0)?'':'text-orange text-bold'}} padding-lr-xl" wx:for="{{6}}" wx:key id="scroll-{{index}}">
-      关卡 {{index + 1}} <text class="num " data-index="{{index + 1}}"></text>
+    <view class="buttom-bar">
+      <button bindtap="goQA" class="cu-btn round lg bg-olive"
+        disabled="{{dbUserInfo.level==7?true:false}}">开始闯关</button>
     </view>
-  </scroll-view>
-
-  <view class="buttom-bar">
-    <button bindtap="goQA" class="cu-btn round lg bg-olive" disabled="{{dbUserInfo.level==7?true:false}}">开始闯关</button>
   </view>
+
 </view>
