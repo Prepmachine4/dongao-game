@@ -6,7 +6,7 @@
         <view >{{index+1}}</view>
         <image src="{{item.userInfo.avatarUrl}}" class="cu-avatar round margin-left" mode="aspectFit"></image>
         <text class="text-df ">{{item.userInfo.nickName}}</text>
-        <view class="text-red ">获得{{item.score}}分</view>
+        <view class="text-red ">获得{{item.totalScore}}分</view>
     </view>
   </view>
 </scroll-view>

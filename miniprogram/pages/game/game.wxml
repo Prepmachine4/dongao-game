@@ -14,6 +14,6 @@
   </scroll-view>
 
   <view class="buttom-bar">
-    <button bindtap="goQA" class="cu-btn round lg bg-olive">开始闯关</button>
+    <button bindtap="goQA" class="cu-btn round lg bg-olive" disabled="{{dbUserInfo.level==7?true:false}}">开始闯关</button>
   </view>
 </view>

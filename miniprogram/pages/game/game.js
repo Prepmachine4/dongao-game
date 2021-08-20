@@ -10,7 +10,7 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
+  onShow: function (options) {
     var that=this
     // 获取新的用户信息
     wx.cloud.callFunction({name:"login",data:{userInfo:wx.getStorageSync('userInfo')}}).then(
@@ -21,9 +21,20 @@ Page({
           userInfo:wx.getStorageSync('userInfo'),
           dbUserInfo:wx.getStorageSync('dbUserInfo'),
         })
-        wx.showToast({
-          title: '即将挑战第'+that.data.dbUserInfo.level+'关',
-        })
+        // 全部通关
+        if(that.data.dbUserInfo.level==7){
+          wx.showToast({
+            title: '已全部通关',
+            icon:"success",
+            duration:3000
+          })
+        }
+        else{
+          wx.showToast({
+            title: '即将挑战第'+that.data.dbUserInfo.level+'关',
+          })
+        }
+        
       }
     )
 

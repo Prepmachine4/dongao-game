@@ -22,8 +22,8 @@ Page({
     },
     timerNumber:null,
     hasCommit:false,
-    modalShow:false
-    
+    modalShow:false,
+    time:0
   },
 
   /**
@@ -58,9 +58,13 @@ Page({
   },
   // 自定义函数
   finished(e){
+    if(this.data.hasCommit) return;
     this.goToNextQuestion()
   },
   goToNextQuestion(){
+    // 统计时间
+    this.setData({time:this.data.time+((this.data.value)/100*10)})
+
     clearInterval(this.data.timerNumber)
     var that=this
     // 保存结果
@@ -85,7 +89,7 @@ Page({
       countDown.start()
 
     }
-    //提交结果 数据校验等待3秒后返回
+    //提交结果 数据校验等待5秒后返回
     else{
       this.setData({
         hasCommit:true
@@ -97,13 +101,14 @@ Page({
       wx.showToast({
         icon:"loading",
         title: '提交数据中',
-        duration:5000,
+        duration:7000,
       })
       wx.cloud.callFunction({
         name:'submitAnswerList',
         data:{
           level:that.data.level,
-          QAList:that.data.QAList
+          QAList:that.data.QAList,
+          time:that.data.time
         }
       }).then((res)=>{
         wx.hideToast({
@@ -119,8 +124,8 @@ Page({
   },
   hideModal(e){
     // 用户点击确定
-    wx.navigateTo({
-      url: `../game`,
+    wx.navigateBack({
+      delta: 1,
     })
   },
   changeSelect(e){

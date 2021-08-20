@@ -10,7 +10,7 @@
   </view>
   <view class="padding flex text-center text-grey bg-white shadow-warp">
     <view class="flex flex-sub flex-direction solid-right">
-      <view class="text-xxl text-blue">{{dbUserInfo.score}}</view>
+      <view class="text-xxl text-blue">{{dbUserInfo.totalScore}}</view>
       <view class="margin-top-sm">
         <text class="cuIcon-favorfill"></text> 积分</view>
     </view>

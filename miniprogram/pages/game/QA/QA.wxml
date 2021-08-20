@@ -56,7 +56,7 @@
       </view>
     </view>
     <view class="padding-xl">
-      您答对了{{dbResData.correct}}个题，获得了{{dbResData.score}}分
+      您答对了{{dbResData.correct}}个题，获得了{{dbResData.score}}分,用时{{time}}秒
       <view>\n</view>
       <view wx:if="{{dbResData.correct>=4}}" class="text-green text-bold">闯关成功</view>
       <view wx:else class="text-red text-bold">闯关失败</view>

@@ -8,6 +8,7 @@ const _=db.command
 exports.main = async (event, context) => {
   const wxContext = cloud.getWXContext()
   let ansList=event.QAList
+  let time=event.time
   let score=0
   let correct=0
   let user=(await db.collection("users").where({"openId":wxContext.OPENID}).get()).data[0]
@@ -26,6 +27,8 @@ exports.main = async (event, context) => {
       }
     })
   });
+
+  score=0.8*score+0.2*((50-time)/50)
   
   // 更新个人信息
   if(correct>=4){
@@ -36,8 +39,15 @@ exports.main = async (event, context) => {
       }
     })
   }
-  // 更新分数
-  
+  // 大于当前关分数则更新分数
+  if(score>user.score[user.level-1]){
+    user.score[user.level-1]=score
+    await db.collection("users").where({"openId":wxContext.OPENID}).update({
+      data:{
+        score:user.score
+      }
+    })
+  }
 
   return {
     score:score,
