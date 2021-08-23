@@ -1,0 +1,96 @@
+<!--pages/study/article3/article3.wxml-->
+
+<cu-custom bgColor="bg-gradual-orange" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">申办历程</view>
+</cu-custom>
+
+<view class="solids-bottom padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="solid-bottom text-xl padding">
+        <text class="text-black text-bold">北京冬奥会申办历程</text>
+      </view>
+    </view>
+  </view>
+
+<view class="cu-timeline">
+  <view class="cu-time">2013年</view>
+  <view class="cu-item cur cuIcon-noticefill">
+    <view class="content bg-green shadow-blur">
+      <text>06.06</text>   国际奥委会宣布启动2022年第24届冬季奥林匹克运动会的申办程序。
+    </view>
+  </view>
+  <view class="cu-item cur cuIcon-noticefill">
+    <view class="content bg-green shadow-blur">
+      <text>11.03</text>  中国奥委会、正式致函国际奥委会，提名北京市为2022年冬奥会的申办城市。
+    </view>
+  </view>
+</view>
+
+<view class="cu-timeline">
+  <view class="cu-time">2014年</view>
+  <view class="cu-item cur cuIcon-noticefill">
+    <view class="content bg-blue shadow-blur">
+      <text>1月</text>   经国务院批准，成立2022年冬季奥林匹克运动会申办委员会。
+    </view>
+  </view>
+  <view class="cu-item cur cuIcon-noticefill">
+    <view class="content bg-blue shadow-blur">
+      <text>03.14</text>  国际奥委会宣布：中国北京-张家口，波兰的克拉科夫，挪威的奥斯陆，乌克兰的利沃夫，哈萨克斯坦的阿拉木图。五个城市正式申办2022年的冬奥会。
+    </view>
+  </view>
+  <view class="cu-item cur cuIcon-noticefill">
+    <view class="content bg-blue shadow-blur">
+      <text>05.26</text>  波兰克拉科夫市市长宣布，克拉科夫将退出2022年冬季奥运会的申办，在上周日的市民投票中，将近70%的投票者表示反对申办。
+    </view>
+  </view>
+  <view class="cu-item cur cuIcon-noticefill">
+    <view class="content bg-blue shadow-blur">
+      <text>06.30</text>  因国内政局动荡，乌克兰利沃夫宣布退出申办。
+    </view>
+  </view>
+  <view class="cu-item cur cuIcon-noticefill">
+    <view class="content bg-blue shadow-blur">
+      <text>07.07</text>  国际奥委会在瑞士洛桑宣布完成对2022年冬奥会申办城市的初选，并根据规则选出三个候选城市：中国北京、挪威奥斯陆和哈萨克斯坦的阿拉木图。
+    </view>
+  </view>
+</view>
+
+<view class="cu-timeline">
+  <view class="cu-time">2015年</view>
+  <view class="cu-item cur cuIcon-noticefill">
+    <view class="content bg-purple shadow-blur">
+      <text>1月</text>   北京冬奥申委和阿拉木图冬奥申委先后向国际奥委会提交2022年冬奥会申办报告。
+    </view>
+  </view>
+  <view class="cu-item cur cuIcon-noticefill">
+    <view class="content bg-purple shadow-blur">
+      <text>03.28</text>  国际奥委会评估团在北辰洲际酒店举办新闻发布会，国际奥委会委员、评估委员会主席亚历山大·茹科夫，奥运会执行主席克里斯托弗·杜比出席了发布会。
+    </view>
+  </view>
+  <view class="cu-item cur cuIcon-noticefill">
+    <view class="content bg-purple shadow-blur">
+      <text>6月</text>  国际奥委会评估委员会，经实地考察后，公布了对候选城市的评估报告。
+    </view>
+  </view>
+  <view class="cu-item cur cuIcon-noticefill">
+    <view class="content bg-purple shadow-blur">
+      <text>06.09</text>  北京和阿拉木图在奥林匹克博物馆向国际奥委会委员做技术陈述。
+    </view>
+  </view>
+  <view class="cu-item cur cuIcon-noticefill">
+    <view class="content bg-purple shadow-blur">
+      <text>07.30</text>  国际奥委会第128次全会在吉隆坡会展中心开幕。马来西亚总理纳吉布发表致辞并宣布全会开幕。北京申冬奥代表团团长、国务院副总理刘延东率团出席开幕式。
+    </view>
+  </view>
+  <view class="cu-item cur cuIcon-noticefill">
+    <view class="content bg-purple shadow-blur">
+      <text>07.31 17:57</text>  国际奥委会第128次全会在吉隆坡举行，投票选出2022年冬奥会举办城市，经过85位国际奥委会委员的投票，北京以44-40击败对手阿拉木图，赢得2022年第二十四届冬季奥林匹克运动会的举办权。北京市市长王安顺，中国奥委会主席、国家体育总局局长刘鹏、张家口市市长侯亮与国际奥委会主席巴赫签订了《主办城市合同》。
+    </view>
+  </view>
+  <view class="cu-item cur cuIcon-noticefill">
+    <view class="content bg-purple shadow-blur">
+      <text>07.31晚</text>  中国国家主席习近平致信申办冬奥会代表团，祝贺他们申奥成功，并勉励在全国各族人民大力支持下，把2022年冬奥会办成一届精彩、非凡、卓越的奥运盛会。
+    </view>
+  </view>
+</view>

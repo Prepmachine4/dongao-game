@@ -1,0 +1,170 @@
+<!--pages/study/article4/article4.wxml-->
+<cu-custom bgColor="bg-gradual-orange" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">冬奥场馆</view>
+</cu-custom>
+
+<view class="solids-bottom padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="solid-bottom text-xl padding">
+        <text class="text-black text-bold">2022年北京冬奥会场馆介绍</text>
+      </view>
+    </view>
+  </view>
+  <view class="padding">    第24届北京冬奥会将于2022年2月4日举行，我们一起来看一看此次冬奥会主要有哪些场馆吧</view>
+
+  <view class="solids-bottom padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="solid-bottom text-lg padding">
+        <text class="text-blue">北京赛区</text>
+      </view>
+    </view>
+  </view>
+  <view class="solids-bottom padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="solid-bottom text-lg padding">
+        <text class="text-black">首都大跳台</text>
+      </view>
+    </view>
+  </view>
+  <image src="https://pic2.zhimg.com/80/v2-15f25ac663ed596cd5d1920361f9b7a1_1440w.jpg" mode="aspectFit"></image>
+  <view class="padding">        首钢滑雪大跳台中心作为2022年北京冬奥会自由式滑雪大跳台和单板滑雪大跳台比赛场馆，已于2020年1月完工。首钢滑雪大跳台是冬奥历史上第一座与工业遗产结合的比赛场馆。造型设计的灵感来自完成动作所需跳台剖面形态曲线与敦煌“飞天”形象的契合。从侧面看上去像一只灵动的“水晶鞋”。</view>
+
+  <view class="solids-bottom padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="solid-bottom text-lg padding">
+        <text class="text-black">五棵松体育中心</text>
+      </view>
+    </view>
+  </view>
+  <image src="https://pic2.zhimg.com/80/v2-9433162c93389915c197cab13f0f6c05_1440w.jpg" mode="aspectFit"></image>
+  <view class="padding">        五棵松体育中心是国内首个在一块比赛场地同时举办篮球、冰球两种职业体育赛事的场馆。按超低能耗建筑标准设计建造的五棵松冰上运动中心在北京冬奥会期间将作为冰球训练馆使用，其特殊设计的多彩外幕墙体系，让场馆得名“冰菱花”。</view>
+
+  <view class="solids-bottom padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="solid-bottom text-lg padding">
+        <text class="text-black">首都体育馆</text>
+      </view>
+    </view>
+  </view>
+  <image src="https://pic3.zhimg.com/80/v2-bc9c8d4088dab7a65614825b9a27e356_1440w.jpg" mode="aspectFit"></image>
+  <view class="padding">        1968年建成，国内第一座人工室内冰场，曾举办2008年北京奥运会排球比赛。2022年北京冬奥会期间将承担短道速滑和花样滑冰比赛任务，产生14枚金牌。这是北京冬奥会第一项完工的改扩建竞赛场馆工程：外观“修旧如旧”，延续经典；场馆内着力打造“最美的冰”，营造更好观赛体验。</view>
+
+  <view class="solids-bottom padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="solid-bottom text-lg padding">
+        <text class="text-black">国家游泳中心</text>
+      </view>
+    </view>
+  </view>
+  <image src="https://pic2.zhimg.com/80/v2-3afefb881959c6bc34ab3f17968922c5_1440w.jpg" mode="aspectFit"></image>
+  <view class="padding">       “双奥场馆”国家游泳中心在2019年首次通过“水冰转换”制出4条冬奥标准的冰壶赛道。“水冰转换”让国家游泳中心可以在“水上功能”和“冰上功能“之间自由切换，可以同时具备开展水上运动、冰上运动，及各类大型活动的能力。场馆泳池正常向公众开放。</view>
+
+  <view class="solids-bottom padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="solid-bottom text-lg padding">
+        <text class="text-black">国家体育场</text>
+      </view>
+    </view>
+  </view>
+  <image src="https://pic3.zhimg.com/80/v2-80c6fc58ea37dce8e8ebceb50e42d8b6_1440w.jpg" mode="aspectFit"></image>
+  <view class="padding">       国家体育场位于北京奥林匹克公园中心区南部，为2008年北京奥运会的主体育场，占地20.4公顷，建筑面积25.8万平方米，可容纳观众9.1万人。根据规划，国家体育场成为北京冬奥会开、闭幕式的场馆。</view>
+
+  <view class="solids-bottom padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="solid-bottom text-lg padding">
+        <text class="text-black">国家体育馆</text>
+      </view>
+    </view>
+  </view>
+  <image src="https://pic4.zhimg.com/80/v2-dcb8a8643011bd78160703141714f883_1440w.jpg" mode="aspectFit"></image>
+  <view class="padding">        国家体育馆作为北京2008年奥运会及残奥会的竞赛场馆之一，曾经举办体操、蹦床等项目。改造后将举办北京2022年冬奥会男子冰球和女子冰球部分比赛、冬残奥会残疾人冰球比赛。场馆赛后除开展冰球运动外，还可以开展花样滑冰、短道速滑等项目，还具有开展夏季运动的多功能转换能力。</view>
+
+  <view class="solids-bottom padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="solid-bottom text-lg padding">
+        <text class="text-black">国家速滑馆</text>
+      </view>
+    </view>
+  </view>
+  <image src="https://pic4.zhimg.com/80/v2-435fac95ab9dfec18f19a767339879d7_1440w.jpg" mode="aspectFit"></image>
+  <view class="padding">        国家速滑馆又称“冰丝带”，是本届赛事唯一新建冰上竞赛场馆，与“鸟巢”、“水立方”共同组成“双奥”之城的标志性建筑群。“冰丝带”是冬奥历史上第一个使用二氧化碳作为制冷剂的速度场馆，将承担速度滑冰项目的比赛，产生14块金牌，是冬奥会产生金牌数量最多的单个场馆。</view>
+
+  <view class="solids-bottom padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="solid-bottom text-lg padding">
+        <text class="text-blue">延庆赛区</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="solids-bottom padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="solid-bottom text-lg padding">
+        <text class="text-black">国家高山滑雪中心</text>
+      </view>
+    </view>
+  </view>
+  <image src="https://pic4.zhimg.com/80/v2-27e198fbff83002af8a46b034c4c45fb_1440w.jpg" mode="aspectFit"></image>
+  <view class="padding">       高山滑雪被誉为“冬奥会皇冠上的明珠”。国家高山滑雪中心设7条雪道，雪道坡度大、落差大，建设难度极高，主要承担高山滑雪和雪车雪橇赛事。同时国家高山滑雪中心还包括山顶出发区、中间平台、竞技结束区、集散广场、索道等配套设施，最多同时容纳8000人观赛。</view>
+
+  <view class="solids-bottom padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="solid-bottom text-lg padding">
+        <text class="text-black">国家雪车雪橇中心</text>
+      </view>
+    </view>
+  </view>
+  <image src="https://pic2.zhimg.com/80/v2-d56847600dfe9c32fe07a9989c0d8f7d_1440w.jpg" mode="aspectFit"></image>
+  <view class="padding">        国家雪车雪橇中心是北京冬奥会雪车、雪橇、钢架雪车项目比赛场地。场馆共有16个角度、坡度不同的弯道，2020年10月赛道制冰完成后，迎来国家队入驻训练，成为北京冬奥会首个国家队入驻训练的竞赛场馆。</view>
+
+  <view class="solids-bottom padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="solid-bottom text-lg padding">
+        <text class="text-blue">张家口赛区</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="solids-bottom padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="solid-bottom text-lg padding">
+        <text class="text-black">云顶滑雪公园</text>
+      </view>
+    </view>
+  </view>
+  <image src="https://pic2.zhimg.com/80/v2-568622bbcb77a1ab1ff70c7b76fa3bd5_1440w.jpg" mode="aspectFit"></image>
+  <view class="padding">        云顶滑雪公园包括U型场地技巧、坡面障碍技巧、雪上技巧、空中技巧、障碍追逐、平行大回转六条赛道，共计产生20块金牌。张家口山地媒体中心位于场馆群内，由云顶大酒店改建而成。云顶滑雪公园不仅是自由式滑雪及单板滑雪国家队的训练基地，也为大众冰雪运动提供了优质场地。</view>
+ 
+
+  <view class="solids-bottom padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="solid-bottom text-lg padding">
+        <text class="text-black">国家冬季两项中心</text>
+      </view>
+    </view>
+  </view>
+  <image src="https://pic3.zhimg.com/80/v2-95e4d69e53a063fb227b834299021b42_1440w.jpg" mode="aspectFit"></image>
+  <view class="padding">国家冬季两项中心位于张家口市崇礼区太子城区域东北侧山谷，依次布置靶场、赛道与起终点区、场馆技术楼等。国家冬季两项中心将承担北京冬奥会冬季两项以及冬残奥会冬季两项的比赛。</view>
+ 
+  <view class="solids-bottom padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="solid-bottom text-lg padding">
+        <text class="text-black">国家跳台滑雪中心</text>
+      </view>
+    </view>
+  </view>
+  <image src="https://pic1.zhimg.com/80/v2-ed5a9530134f8738485378c01e06ea68_1440w.jpg" mode="aspectFit"></image>
+  <image src="https://pic2.zhimg.com/80/v2-16856f07f11955f5229dec21e8ad952d_1440w.jpg" mode="aspectFit"></image>
+  <view class="padding">国家跳台滑雪中心将承担北京冬奥会跳台滑雪、北欧两项的比赛。国家跳台滑雪中心是我国首座符合国际标准的跳台滑雪场地，也是张家口赛区冬奥会场馆群建设中工程量最大、技术难度最高的竞赛场馆。跳台剖面因与中国传统吉祥饰物“如意”的S形曲线契合，因此被形象地称为“雪如意”。</view>
+
+  <view class="solids-bottom padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="solid-bottom text-lg padding">
+        <text class="text-black">国家越野滑雪中心</text>
+      </view>
+    </view>
+  </view>
+  <image src="https://pic1.zhimg.com/80/v2-4d4315eb5ce0a42d23e2951aa3823770_1440w.jpg" mode="aspectFit"></image>
+  <image src="https://pic3.zhimg.com/80/v2-0f05bd62dc877fd6a0738e1fa2200efa_1440w.jpg" mode="aspectFit"></image>
+  <view class="padding">国家冬季两项中心位于张家口市崇礼区太子城区域东北侧山谷，依次布置靶场、赛道与起终点区、场馆技术楼等。国家冬季两项中心将承担北京冬奥会冬季两项以及冬残奥会冬季两项的比赛。</view>

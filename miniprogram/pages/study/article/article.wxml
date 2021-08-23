@@ -1,2 +1,340 @@
 <!--miniprogram/pages/study/article/article.wxml-->
-<text>miniprogram/pages/study/article/article.wxml</text>
+
+<cu-custom bgColor="bg-gradual-orange" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">冬奥历史</view>
+</cu-custom>
+
+
+
+
+
+
+
+
+<view class="solids-bottom padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="solid-bottom text-xl padding">
+        <text class="text-black text-bold">各届奥运会小知识</text>
+      </view>
+      <view class="solid-bottom text-lg padding">
+        <text class="text-black">第一届冬奥会</text>
+      </view>
+    </view>
+  </view>
+  <image src="http://i3.itc.cn/20100127/64f_0cdbd8fc_57c0_465a_b44e_09a9d6c5c418_0.jpg" ></image>
+  <view class="padding">举办时间：1924年</view>
+  <view class="padding">举办地点：夏蒙尼</view>
+  <view class="padding">代表团数：16个</view>
+  <view class="padding">比赛项目：16项</view>
+  <view class="padding">参赛人数：258人</view>
+
+  <view class="solids-bottom padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="solid-bottom text-lg padding">
+        <text class="text-black">第二届冬奥会</text>
+      </view>
+    </view>
+  </view>
+  <image src="http://i0.itc.cn/20100127/64f_0cdbd8fc_57c0_465a_b44e_09a9d6c5c418_1.jpg" class="img"></image>
+  <view class="padding">举办时间：1928年</view>
+  <view class="padding">举办地点：圣莫里茨</view>
+  <view class="padding">代表团数：25个</view>
+  <view class="padding">比赛项目：14项</view>
+  <view class="padding">参赛人数：464人</view>
+
+  <view class="solids-bottom padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="solid-bottom text-lg padding">
+        <text class="text-black">第三届冬奥会</text>
+      </view>
+    </view>
+  </view>
+  <image src="http://i3.itc.cn/20100127/64f_0cdbd8fc_57c0_465a_b44e_09a9d6c5c418_2.jpg" class="img"></image>
+  <view class="padding">举办时间：1932年</view>
+  <view class="padding">举办地点：普莱西德湖</view>
+  <view class="padding">代表团数：17个</view>
+  <view class="padding">比赛项目：14项</view>
+  <view class="padding">参赛人数：252人</view>
+
+  <view class="solids-bottom padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="solid-bottom text-lg padding">
+        <text class="text-black">第四届冬奥会</text>
+      </view>
+    </view>
+  </view>
+  <image src="http://i3.itc.cn/20100127/64f_0cdbd8fc_57c0_465a_b44e_09a9d6c5c418_3.jpg" class="img"></image>
+  <view class="padding">举办时间：1936年</view>
+  <view class="padding">举办地点：加尔施-帕滕基兴</view>
+  <view class="padding">代表团数：28个</view>
+  <view class="padding">比赛项目：17项</view>
+  <view class="padding">参赛人数：646人</view>
+
+  <view class="solids-bottom padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="solid-bottom text-lg padding">
+        <text class="text-black">第五届冬奥会</text>
+      </view>
+    </view>
+  </view>
+  <image src="http://i2.itc.cn/20100127/64f_0cdbd8fc_57c0_465a_b44e_09a9d6c5c418_4.jpg" class="img"></image>
+  <view class="padding">举办时间：1948年</view>
+  <view class="padding">举办地点：圣莫里茨</view>
+  <view class="padding">代表团数：28个</view>
+  <view class="padding">比赛项目：22项</view>
+  <view class="padding">参赛人数：669人</view>
+
+  <view class="solids-bottom padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="solid-bottom text-lg padding">
+        <text class="text-black">第六届冬奥会</text>
+      </view>
+    </view>
+  </view>
+  <image src="http://i3.itc.cn/20100127/64f_df76ad13_0819_48c7_a3f6_edca6e61b9e7_0.jpg" class="img"></image>
+  <view class="padding">举办时间：1952年</view>
+  <view class="padding">举办地点：奥斯陆</view>
+  <view class="padding">代表团数：30个</view>
+  <view class="padding">比赛项目：22项</view>
+  <view class="padding">参赛人数：694人</view>
+
+  <view class="solids-bottom padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="solid-bottom text-lg padding">
+        <text class="text-black">第七届冬奥会</text>
+      </view>
+    </view>
+  </view>
+  <image src="http://i2.itc.cn/20100127/64f_df76ad13_0819_48c7_a3f6_edca6e61b9e7_1.jpg" class="img"></image>
+  <view class="padding">举办时间：1956年</view>
+  <view class="padding">举办地点：科蒂纳丹佩佐</view>
+  <view class="padding">代表团数：32个</view>
+  <view class="padding">比赛项目：24项</view>
+  <view class="padding">参赛人数：821人</view>
+
+  <view class="solids-bottom padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="solid-bottom text-lg padding">
+        <text class="text-black">第八届冬奥会</text>
+      </view>
+    </view>
+  </view>
+  <image src="http://i2.itc.cn/20100127/64f_df76ad13_0819_48c7_a3f6_edca6e61b9e7_2.jpg" class="img"></image>
+  <view class="padding">举办时间：1960年</view>
+  <view class="padding">举办地点：斯阔</view>
+  <view class="padding">代表团数：30个</view>
+  <view class="padding">比赛项目：27项</view>
+  <view class="padding">参赛人数：665人</view>
+
+  <view class="solids-bottom padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="solid-bottom text-lg padding">
+        <text class="text-black">第九届冬奥会</text>
+      </view>
+    </view>
+  </view>
+  <image src="http://i3.itc.cn/20100127/64f_df76ad13_0819_48c7_a3f6_edca6e61b9e7_3.jpg" class="img"></image>
+  <view class="padding">举办时间：1964年</view>
+  <view class="padding">举办地点：因斯布鲁克</view>
+  <view class="padding">代表团数：36个</view>
+  <view class="padding">比赛项目：134项</view>
+  <view class="padding">参赛人数：1091人</view>
+
+  <view class="solids-bottom padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="solid-bottom text-lg padding">
+        <text class="text-black">第十届冬奥会</text>
+      </view>
+    </view>
+  </view>
+  <image src="http://i1.itc.cn/20100127/64f_df76ad13_0819_48c7_a3f6_edca6e61b9e7_4.jpg" class="img"></image>
+  <view class="padding">举办时间：1968年</view>
+  <view class="padding">举办地点：格勒诺布尔</view>
+  <view class="padding">代表团数：37个</view>
+  <view class="padding">比赛项目：35项</view>
+  <view class="padding">参赛人数：1158人</view>
+
+  <view class="solids-bottom padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="solid-bottom text-lg padding">
+        <text class="text-black">第十一届冬奥会</text>
+      </view>
+    </view>
+  </view>
+  <image src="http://i2.itc.cn/20100127/64f_213f4164_3e64_44ee_b313_96d9fae70e07_0.jpg" class="img"></image>
+  <view class="padding">举办时间：1972年</view>
+  <view class="padding">举办地点：札幌</view>
+  <view class="padding">代表团数：35个</view>
+  <view class="padding">比赛项目：35项</view>
+  <view class="padding">参赛人数：1006人</view>
+
+  <view class="solids-bottom padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="solid-bottom text-lg padding">
+        <text class="text-black">第十二届冬奥会</text>
+      </view>
+    </view>
+  </view>
+  <image src="http://i2.itc.cn/20100127/64f_213f4164_3e64_44ee_b313_96d9fae70e07_1.jpg" class="img"></image>
+  <view class="padding">举办时间：1976年</view>
+  <view class="padding">举办地点：因斯布鲁克</view>
+  <view class="padding">代表团数：37个</view>
+  <view class="padding">比赛项目：37项</view>
+  <view class="padding">参赛人数：1123人</view>
+
+  <view class="solids-bottom padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="solid-bottom text-lg padding">
+        <text class="text-black">第十三届冬奥会</text>
+      </view>
+    </view>
+  </view>
+  <image src="http://i3.itc.cn/20100127/64f_213f4164_3e64_44ee_b313_96d9fae70e07_2.jpg" class="img"></image>
+  <view class="padding">举办时间：1980年</view>
+  <view class="padding">举办地点：普莱西德湖</view>
+  <view class="padding">代表团数：37个</view>
+  <view class="padding">比赛项目：38项</view>
+  <view class="padding">参赛人数：1072人</view>
+
+  <view class="solids-bottom padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="solid-bottom text-lg padding">
+        <text class="text-black">第十四届冬奥会</text>
+      </view>
+    </view>
+  </view>
+  <image src="http://i1.itc.cn/20100127/64f_213f4164_3e64_44ee_b313_96d9fae70e07_3.jpg" class="img"></image>
+  <view class="padding">举办时间：1984年</view>
+  <view class="padding">举办地点：萨拉热窝</view>
+  <view class="padding">代表团数：49个</view>
+  <view class="padding">比赛项目：39项</view>
+  <view class="padding">参赛人数：1272人</view>
+
+  <view class="solids-bottom padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="solid-bottom text-lg padding">
+        <text class="text-black">第十五届冬奥会</text>
+      </view>
+    </view>
+  </view>
+  <image src="http://i2.itc.cn/20100127/64f_213f4164_3e64_44ee_b313_96d9fae70e07_4.jpg" class="img"></image>
+  <view class="padding">举办时间：1988年</view>
+  <view class="padding">举办地点：卡尔加里</view>
+  <view class="padding">代表团数：57个</view>
+  <view class="padding">比赛项目：46项</view>
+  <view class="padding">参赛人数：1423人</view>
+
+  <view class="solids-bottom padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="solid-bottom text-lg padding">
+        <text class="text-black">第十六届冬奥会</text>
+      </view>
+    </view>
+  </view>
+  <image src="https://c-ssl.duitang.com/uploads/item/201207/24/20120724163827_XNZ4T.thumb.1000_0.jpeg" class="img"></image>
+  <view class="padding">举办时间：1992年</view>
+  <view class="padding">举办地点：阿尔贝维尔</view>
+  <view class="padding">代表团数：64个</view>
+  <view class="padding">比赛项目：57项</view>
+  <view class="padding">参赛人数：1801人</view>
+
+  <view class="solids-bottom padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="solid-bottom text-lg padding">
+        <text class="text-black">第十七届冬奥会</text>
+      </view>
+    </view>
+  </view>
+  <image src="http://i1.itc.cn/20100127/64f_b7812162_b7fc_4f3e_81d0_b790124c0562_1.jpg" class="img"></image>
+  <view class="padding">举办时间：1994年</view>
+  <view class="padding">举办地点：利勒哈默尔</view>
+  <view class="padding">代表团数：67个</view>
+  <view class="padding">比赛项目：61项</view>
+  <view class="padding">参赛人数：1737人</view>
+
+  <view class="solids-bottom padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="solid-bottom text-lg padding">
+        <text class="text-black">第十八届冬奥会</text>
+      </view>
+    </view>
+  </view>
+  <image src="http://i0.itc.cn/20100127/64f_b7812162_b7fc_4f3e_81d0_b790124c0562_2.jpg" class="img"></image>
+  <view class="padding">举办时间：1998年</view>
+  <view class="padding">举办地点：长野</view>
+  <view class="padding">代表团数：72个</view>
+  <view class="padding">比赛项目：68项</view>
+  <view class="padding">参赛人数：2176人</view>
+
+  <view class="solids-bottom padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="solid-bottom text-lg padding">
+        <text class="text-black">第十九届冬奥会</text>
+      </view>
+    </view>
+  </view>
+  <image src="http://i0.itc.cn/20100127/64f_b7812162_b7fc_4f3e_81d0_b790124c0562_3.jpg" class="img"></image>
+  <view class="padding">举办时间：2002年</view>
+  <view class="padding">举办地点：盐湖城</view>
+  <view class="padding">代表团数：77个</view>
+  <view class="padding">比赛项目：78项</view>
+  <view class="padding">参赛人数：2399人</view>
+
+  <view class="solids-bottom padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="solid-bottom text-lg padding">
+        <text class="text-black">第二十届冬奥会</text>
+      </view>
+    </view>
+  </view>
+  <image src="http://i1.itc.cn/20100127/64f_ef9be4d3_1dc3_4ce5_ab38_41e13b0e4d6e_0.jpg" class="img"></image>
+  <view class="padding">举办时间：2006年</view>
+  <view class="padding">举办地点：都灵</view>
+  <view class="padding">代表团数：80个</view>
+  <view class="padding">比赛项目：84项</view>
+  <view class="padding">参赛人数：2508人</view>
+
+  <view class="solids-bottom padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="solid-bottom text-lg padding">
+        <text class="text-black">第二十一届冬奥会</text>
+      </view>
+    </view>
+  </view>
+  <image src="http://photocdn.sohu.com/20080709/Img258046060.jpg" class="img"></image>
+  <view class="padding">举办时间：2010年</view>
+  <view class="padding">举办地点：温哥华</view>
+  <view class="padding">代表团数：82个</view>
+  <view class="padding">比赛项目：86项</view>
+  <view class="padding">参赛人数：2566人</view>
+
+  <view class="solids-bottom padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="solid-bottom text-lg padding">
+        <text class="text-black">第二十二届冬奥会</text>
+      </view>
+    </view>
+  </view>
+  <image src="http://inews.gtimg.com/newsapp_bt/0/11408666681/0/0" class="img"></image>
+  <view class="padding">举办时间：2014年</view>
+  <view class="padding">举办地点：索契</view>
+  <view class="padding">代表团数：87个</view>
+  <view class="padding">比赛项目：98项</view>
+  <view class="padding">参赛人数：2873人</view>
+
+  <view class="solids-bottom padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="solid-bottom text-lg padding">
+        <text class="text-black">第二十三届冬奥会</text>
+      </view>
+    </view>
+  </view>
+  <image src="http://inews.gtimg.com/newsapp_bt/0/11408666682/0/0" class="img"></image>
+  <view class="padding">举办时间：2018年</view>
+  <view class="padding">举办地点：平昌</view>
+  <view class="padding">代表团数：92个</view>
+  <view class="padding">比赛项目：102项</view>
+  <view class="padding">参赛人数：2914人</view>
+
+ 

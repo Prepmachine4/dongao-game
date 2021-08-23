@@ -1,1 +1,6 @@
 /* miniprogram/pages/study/article/article.wxss */
+.img{
+  clear: both;
+  display: block;
+  margin: auto;
+}

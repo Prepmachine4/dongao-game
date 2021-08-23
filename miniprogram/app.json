@@ -2,7 +2,11 @@
   "pages": [
     "pages/index/index",
     "pages/home/home",
-    "pages/game/QA/QA"
+    "pages/game/QA/QA",
+    "pages/study/article2/article2",
+    "pages/study/article3/article3",
+    "pages/study/article4/article4",
+    "pages/study/article5/article5"
   ],
   "window": {
     "navigationBarBackgroundColor": "#39b54a",
