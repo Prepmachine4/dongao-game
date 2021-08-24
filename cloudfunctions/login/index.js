@@ -13,6 +13,7 @@ exports.main = async (event, context) => {
     openId:wxContext.OPENID,
     userInfo:event.userInfo,
     score:[0,0,0,0,0,0],
+    totalScore:0,
     level:1,
     }
     await db.collection("users").add({data:data})

@@ -42,9 +42,14 @@ exports.main = async (event, context) => {
   // 大于当前关分数则更新分数
   if(score>user.score[user.level-1]){
     user.score[user.level-1]=score
+    let totalScore=0
+    user.score.forEach(ele=>{
+      totalScore+=ele
+    })
     await db.collection("users").where({"openId":wxContext.OPENID}).update({
       data:{
-        score:user.score
+        score:user.score,
+        totalScore:totalScore
       }
     })
   }
