@@ -24,8 +24,8 @@ Page({
       },
       
       {
-        title: '图鉴',
-        name: 'graph',
+        title: '文创',
+        name: 'gift',
         icon: 'tujian',
         color: 'pink'
       },

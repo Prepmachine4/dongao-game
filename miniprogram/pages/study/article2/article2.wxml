@@ -1,0 +1,72 @@
+<!--miniprogram/pages/study/article2/article2.wxml-->
+
+<cu-custom bgColor="bg-gradual-orange" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">北京冬奥</view>
+</cu-custom>
+
+<view class="solids-bottom padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="solid-bottom text-xl padding">
+        <text class="text-black text-bold">2022年北京冬奥会</text>
+      </view>
+    </view>
+  </view>
+  <view class="padding">    冬奥会全称冬季奥林匹克运动会，是世界规模最大的冬季综合性运动会。第24届冬奥会将于2022年02月04日至02月20日在中国北京和张家口举行，包括15个体育项目，主体育场为国家体育场（即“鸟巢”）。</view>
+
+  <view class="solids-bottom padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="solid-bottom text-lg padding">
+        <text class="text-black">会徽</text>
+      </view>
+    </view>
+  </view>
+  <image src="https://p0.ssl.img.360kuai.com/t019924c1e08e209eef.webp" mode="aspectFit"></image>
+  <view class="padding">·以汉字“冬”为灵感来源；</view>
+  <view class="padding">·上半部分展现滑冰运动员的造型，下半部分表现滑雪运动员的英姿；</view>
+  <view class="padding">·中间舞动的线条流畅且充满韵律，代表举办地起伏的山峦、赛场、冰雪滑道和节日飘舞的丝带</view>
+  <view class="padding">·蓝色为主色调，寓意梦想与未来，以及冰雪的明亮纯洁</view>
+  <view class="padding">·红黄两色源自中国国旗，代表运动的激情、青春与活力。</view>
+  <view class="padding">·“BEIJING 2022”字体的形态上汲取了中国书法与剪纸的特点</view>
+
+  <view class="solids-bottom padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="solid-bottom text-lg padding">
+        <text class="text-black">冬奥会吉祥物</text>
+      </view>
+    </view>
+  </view>
+  <image src="http://5b0988e595225.cdn.sohucs.com/images/20190919/7f98352bdeb54552ad18556e273d8768.jpeg" mode="aspectFit"></image>
+  <view class="padding">·北京冬奥会吉祥物“冰墩墩”</view>
+  <view class="padding">·北京冬奥会吉祥物“冰墩墩”</view>
+  <view class="padding">·墩墩，意喻健康、活泼、可爱</view>
+  <view class="padding">·象征着冬奥会运动员强壮的身体、坚韧的意志和鼓舞人心的奥林匹克精神</view>
+
+  <view class="solids-bottom padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="solid-bottom text-lg padding">
+        <text class="text-black">冬残奥会吉祥物</text>
+      </view>
+    </view>
+  </view>
+  <image src="http://5b0988e595225.cdn.sohucs.com/images/20190919/17144cea927e4cbe9051b7013a4a8884.jpeg" mode="aspectFit"></image>
+  <view class="padding">·北京冬残奥会吉祥物“雪容融”</view>
+  <view class="padding">·以灯笼为原型进行设计创作</view>
+  <view class="padding">·雪，象征洁白、美丽，是冰雪运动的特点；
+容，意喻包容、宽容，交流互鉴；
+融，意喻融合、温暖，相知相融
+</view>
+ 
+
+  <view class="solids-bottom padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="solid-bottom text-lg padding">
+        <text class="text-black">四大办奥理念</text>
+      </view>
+    </view>
+  </view>
+  <view class="padding">“绿色、共享、开放、廉洁”：</view>
+  <view class="padding">·绿色办奥：所有竞赛场馆将100%使用绿色电力，四个冰上项目场馆采用新型二氧化碳制冷剂，是目前世界上最环保的制冰技术。北京冬奥会将成为“最绿色”的奥运会。</view>
+  <view class="padding">·共享办奥：筹办北京冬奥会为全面实施京津冀协同发展战略起到引领作用；推动京张体育文化旅游带的打造，带动沿线群众就业、增收致富。据统计，在将举办北京冬奥会部分雪上项目比赛的张家口崇礼区，每5人就有1人从事冰雪相关工作。</view>
+  <view class="padding">·开放办奥：北京冬奥组委与国际奥委会、国际残奥委会、国际冬季单项体育联合会等方面始终保持良好合作，从全球18个国家和地区遴选57名特聘专家，分散到北京冬奥组委十几个部门工作。</view>
+  <view class="padding">·廉洁办奥：北京冬奥组委简化办赛方案，努力实现精彩办赛和节俭办赛的统一，坚持节约原则、不搞铺张浪费，用最节俭的方式承办冬奥会。</view>

@@ -1,0 +1,146 @@
+<!--pages/study/article5/article5.wxml-->
+<cu-custom bgColor="bg-gradual-orange" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">冬奥项目</view>
+</cu-custom>
+
+<view class="solids-bottom padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="solid-bottom text-xl padding">
+        <text class="text-black text-bold">2022年北京冬奥会项目介绍</text>
+      </view>
+    </view>
+  </view>
+  <view class="padding">    第24届北京冬奥会将于2022年2月4日开幕。北京和张家口两地进行19天的比赛（开幕式前两天进行冰壶混合双人循环赛）。下面盘点一下冬奥会有哪些项目。</view>
+
+ 
+  <view class="solids-bottom padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="solid-bottom text-lg padding">
+        <text class="text-blue">2022年北京冬奥会比赛项目盘点</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="padding">        2022北京冬季奥运会上共设7个大项（滑雪、滑冰、冰球、冰壶、雪车、雪橇、冬季两项）、15个分项（高山滑雪、自由式滑雪、单板滑雪、跳台滑雪、越野滑雪、北欧两项、短道速滑、速度滑冰、花样滑冰、冰球、冰壶、雪车、钢架雪车、雪橇、冬季两项）和109个小项。</view>
+  <image src="http://5b0988e595225.cdn.sohucs.com/images/20180808/5130987633a0478783529a5f79513e7e.jpeg" mode="aspectFit"></image>
+
+  <view class="padding">  这15个项目，又分为男子项目和女子项目。以速度滑冰项目为例：男子速度滑冰项目包括：500米、1000米、1500米、5000米、10000米、集体追逐和集体出发。女子速度滑冰项目包括：500米、1000米、1500米、3000米、5000米、集体追逐和集体出发。其中，女子单人雪车、单板滑雪障碍追逐混合团体、自由式滑雪男子大跳台、自由式滑雪女子大跳台、自由式滑雪空中技巧混合团体、跳台滑雪混合团体、短道速滑混合团体接力为7个新增小项。</view>
+
+
+  <view class="solids-bottom padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="solid-bottom text-lg padding">
+        <text class="text-blue">2022年北京冬奥会部分项目介绍</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="solids-bottom padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="solid-bottom text-lg padding">
+        <text class="text-black">雪橇</text>
+      </view>
+    </view>
+  </view>
+
+  <image src="https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2021%2F0202%2Fe5ad456aj00qnvmzh0003c0001u003cg.jpg&thumbnail=650x2147483647&quality=80&type=jpg" mode="aspectFit"></image>
+  <view class="solids-bottom padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="solid-bottom text-lg padding">
+        <text class="text-black">北京2022年冬奥会体育图标：雪橇</text>
+      </view>
+    </view>
+  </view>
+  <view class="padding"> 项目设置</view>
+  <view class="padding"> 男子项目：男子单人雪橇、双人雪橇</view>
+  <view class="padding"> 女子项目：女子单人雪橇</view>
+  <view class="padding"> 混合项目：雪橇团体接力</view>
+  <view class="padding"> 比赛场地</view>
+  <view class="padding"> 国家雪车雪橇中心</view>
+
+ 
+
+  <view class="solids-bottom padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="solid-bottom text-lg padding">
+        <text class="text-black">冰球</text>
+      </view>
+    </view>
+  </view>
+  <image src="http://sports.people.com.cn/NMediaFile/2021/0122/MAIN202101220914000378867693403.png" mode="aspectFit"></image>
+  <view class="solids-bottom padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="solid-bottom text-lg padding">
+        <text class="text-black">北京2022年冬奥会体育图标：冰球</text>
+      </view>
+    </view>
+  </view>
+  <view class="padding"> 项目设置</view>
+  <view class="padding"> 男子项目：男子团体</view>
+  <view class="padding"> 女子项目：女子团体</view>
+  <view class="padding"> 比赛场地</view>
+  <view class="padding"> 国家体育馆、五棵松体育中心</view>
+
+  <view class="solids-bottom padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="solid-bottom text-lg padding">
+        <text class="text-black">冬季两项</text>
+      </view>
+    </view>
+  </view>
+  <image src="http://sports.people.com.cn/NMediaFile/2021/0201/MAIN202102011553000020315338502.png" mode="aspectFit"></image>
+  <view class="solids-bottom padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="solid-bottom text-lg padding">
+        <text class="text-black">北京2022年冬奥会体育图标：冬季两项</text>
+      </view>
+    </view>
+  </view>
+  <view class="padding"> 项目设置</view>
+  <view class="padding"> 男子项目：10公里短距离、20公里个人、12.5公里追逐、15公里集体出发、4×7.5公里接力</view>
+  <view class="padding"> 女子项目：7.5公里短距离、15公里个人、10公里追逐、12.5公里集体出发、4×6公里接力</view>
+  <view class="padding"> 混合项目：混合接力（女子2×6公里+男子2×7.5公里）</view>
+  <view class="padding"> 比赛场地</view>
+  <view class="padding"> 国家冬季两项中心</view>
+
+  <view class="solids-bottom padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="solid-bottom text-lg padding">
+        <text class="text-black">北欧两项</text>
+      </view>
+    </view>
+  </view>
+  <image src="https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2021%2F0128%2F34566bbcj00qnme280006c0002x003tg.jpg&thumbnail=650x2147483647&quality=80&type=jpg" mode="aspectFit"></image>
+  <view class="solids-bottom padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="solid-bottom text-lg padding">
+        <text class="text-black">北京2022年冬奥会体育图标：北欧两项</text>
+      </view>
+    </view>
+  </view>
+  <view class="padding"> 项目设置</view>
+  <view class="padding"> 男子项目：个人-跳台滑雪标准台/越野滑雪10公里、个人-跳台滑雪大跳台/越野滑雪10公里、团体-跳台滑雪大跳台/越野滑雪4×5公里接力</view>
+  <view class="padding"> 比赛场地</view>
+  <view class="padding"> 国家越野滑雪中心、国家跳台滑雪中心</view>
+  
+  <view class="solids-bottom padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="solid-bottom text-lg padding">
+        <text class="text-black">冬季两项</text>
+      </view>
+    </view>
+  </view>
+  <image src="http://sports.people.com.cn/NMediaFile/2021/0130/MAIN202101301450000368854415384.png" mode="aspectFit"></image>
+  <view class="solids-bottom padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="solid-bottom text-lg padding">
+        <text class="text-black">北京2022年冬奥会体育图标：雪车</text>
+      </view>
+    </view>
+  </view>
+  <view class="padding"> 项目设置</view>
+  <view class="padding"> 男子项目：男子双人、男子四人</view>
+  <view class="padding"> 女子项目：女子单人、女子双人</view>
+  <view class="padding"> 比赛场地</view>
+  <view class="padding"> 国家雪车雪橇中心</view>

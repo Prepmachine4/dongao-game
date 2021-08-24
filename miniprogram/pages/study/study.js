@@ -33,10 +33,29 @@ Page({
   },
   goto(e){
     let id=e.currentTarget.dataset.id
-    wx.navigateTo({
+    if(id==1)
+    {wx.navigateTo({
       url: './article/article',
-    })
-  },
+  })}
+  else if(id==2)
+  {wx.navigateTo({
+    url: './article2/article2',
+})}
+else if(id==3)
+  {wx.navigateTo({
+    url: './article3/article3',
+})}
+else if(id==4)
+  {wx.navigateTo({
+    url: './article4/article4',
+})}
+else if(id==5)
+  {wx.navigateTo({
+    url: './article5/article5',
+})}
+},
+ 
+
   onLoad() {
     this.towerSwiper('swiperList');
     // 初始化towerSwiper 传已有的数组名即可

@@ -2,7 +2,7 @@
 
 
 
-<cu-custom bgColor="bg-gradual-pink" isBack="{{true}}">
+<cu-custom bgColor="bg-gradual-orange" isBack="{{true}}">
   <view slot="backText">返回</view>
   <view slot="content">冬奥知识</view>
 </cu-custom>
@@ -29,80 +29,82 @@
       <view class="text-cut">冬奥历史</view>
     </view>
     <view class="content">
-      <image src="https://p0.ssl.img.360kuai.com/t01f2970ccd1e2534ee.webp" mode="aspectFill"></image>
+      <image src="http://p.nanrenwo.net/uploads/allimg/160819/8446-160Q9153234.jpg" mode="aspectFill"></image>
       <view class="desc">
-        <view class="text-content"> 折磨生出苦难，苦难又会加剧折磨，凡间这无穷的循环，将有我来终结！真正的恩典因不完整而美丽，因情感而真诚，因脆弱而自由！</view>
+        <view class="text-content"> 奥林匹克运动会起源于古希腊，因举办地点在奥林匹克而得名。点击文章查看各届奥运会详情</view>
         <view>
           <view class="cu-tag bg-red light sm round">缘梦冬奥跃创实践团</view>
-          <view class="cu-tag bg-green light sm round">史诗</view>
         </view>
       </view>
     </view>
   </view>
 </view>
-<view class="cu-card article {{isCard?'no-card':''}}">
+
+<view class="cu-card article {{isCard?'no-card':''}}" bindtap="goto" data-id="2">
   <view class="cu-item shadow">
     <view class="title">
       <view class="text-cut">北京冬奥</view>
     </view>
     <view class="content">
-      <image src="https://p0.ssl.img.360kuai.com/t01f2970ccd1e2534ee.webp" mode="aspectFill"></image>
+      <image src="http://pic.kekenet.com/2016/1128/42531480346126.jpg" mode="aspectFill"></image>
       <view class="desc">
-        <view class="text-content"> 折磨生出苦难，苦难又会加剧折磨，凡间这无穷的循环，将有我来终结！真正的恩典因不完整而美丽，因情感而真诚，因脆弱而自由！</view>
+        <view class="text-content"> 第24届冬奥会将于2022年02月04日至02月20日在中国北京和张家口举行，包括15个体育项目，主体育场为国家体育场（即“鸟巢”）。</view>
         <view>
           <view class="cu-tag bg-red light sm round">缘梦冬奥跃创实践团</view>
-          <view class="cu-tag bg-green light sm round">史诗</view>
         </view>
       </view>
     </view>
   </view>
 </view>
-<view class="cu-card article {{isCard?'no-card':''}}">
+
+
+<view class="cu-card article {{isCard?'no-card':''}}" bindtap="goto" data-id="3">
   <view class="cu-item shadow">
     <view class="title">
-      <view class="text-cut">冬奥项目</view>
+      <view class="text-cut">申办历程</view>
     </view>
     <view class="content">
-      <image src="https://p0.ssl.img.360kuai.com/t01f2970ccd1e2534ee.webp" mode="aspectFill"></image>
+      <image src="https://6465-dev-5gb1g863bb2952f3-1306936285.tcb.qcloud.la/images/study.jpg?sign=c251b03062f3ca9dae8527d6fc52b330&t=1629794923" mode="aspectFill"></image>
       <view class="desc">
-        <view class="text-content"> 折磨生出苦难，苦难又会加剧折磨，凡间这无穷的循环，将有我来终结！真正的恩典因不完整而美丽，因情感而真诚，因脆弱而自由！</view>
+        <view class="text-content">2013年06月06日,国际奥委会宣布启动2022年第24届冬季奥林匹克运动会的申办程序。</view>
         <view>
           <view class="cu-tag bg-red light sm round">缘梦冬奥跃创实践团</view>
-          <view class="cu-tag bg-green light sm round">史诗</view>
         </view>
       </view>
     </view>
   </view>
 </view>
-<view class="cu-card article {{isCard?'no-card':''}}">
+
+
+
+<view class="cu-card article {{isCard?'no-card':''}}" bindtap="goto" data-id="4">
   <view class="cu-item shadow">
     <view class="title">
       <view class="text-cut">冬奥场馆</view>
     </view>
     <view class="content">
-      <image src="https://p0.ssl.img.360kuai.com/t01f2970ccd1e2534ee.webp" mode="aspectFill"></image>
+      <image src="http://upload.71.cn/2018/0327/1522140799739.jpg" mode="aspectFill"></image>
       <view class="desc">
-        <view class="text-content"> 折磨生出苦难，苦难又会加剧折磨，凡间这无穷的循环，将有我来终结！真正的恩典因不完整而美丽，因情感而真诚，因脆弱而自由！</view>
+        <view class="text-content"> 首钢滑雪大跳台中心作为2022年北京冬奥会自由式滑雪大跳台和单板滑雪大跳台比赛场馆，已于2020年1月完工。首钢滑雪大跳台是冬奥历史上第一座与工业遗产结合的比赛场馆。</view>
         <view>
           <view class="cu-tag bg-red light sm round">缘梦冬奥跃创实践团</view>
-          <view class="cu-tag bg-green light sm round">史诗</view>
         </view>
       </view>
     </view>
   </view>
 </view>
-<view class="cu-card article {{isCard?'no-card':''}}">
+
+<view class="cu-card article {{isCard?'no-card':''}}" bindtap="goto" data-id="5">
   <view class="cu-item shadow">
     <view class="title">
-      <view class="text-cut">最新进展</view>
+      <view class="text-cut">冬奥项目</view>
     </view>
     <view class="content">
-      <image src="https://p0.ssl.img.360kuai.com/t01f2970ccd1e2534ee.webp" mode="aspectFill"></image>
+      <image src="https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2FFlX0XgZX%3DOG5khinkBxmzyY65tGdG7CVPt8HGI4j0M6wi1553481556860compressflag.jpg&thumbnail=650x2147483647&quality=80&type=jpg" mode="aspectFill"></image>
       <view class="desc">
-        <view class="text-content"> 折磨生出苦难，苦难又会加剧折磨，凡间这无穷的循环，将有我来终结！真正的恩典因不完整而美丽，因情感而真诚，因脆弱而自由！</view>
+        <view class="text-content"> 第24届北京冬奥会将于2022年2月4日开幕。北京和张家口两地进行19天的比赛（开幕式前两天进行冰壶混合双人循环赛）。下面盘点一下冬奥会有哪些项目。</view>
         <view>
           <view class="cu-tag bg-red light sm round">缘梦冬奥跃创实践团</view>
-          <view class="cu-tag bg-green light sm round">史诗</view>
         </view>
       </view>
     </view>
