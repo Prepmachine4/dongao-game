@@ -18,6 +18,22 @@ Component({
         withShareTicket: false,
         menus: ['shareAppMessage', 'shareTimeline']
       })
+
+      // 检查授权
+      if(!wx.getStorageSync('userInfo')){
+        wx.showToast({
+          title: '请授权个人信息',
+          icon:'error',
+          duration:3000,
+          success:()=>{
+            setTimeout(()=>{
+              wx.switchTab({
+                url: '../index/index',
+              })
+            },3000)
+          }
+        })
+      }
     }
   },
   attached() {

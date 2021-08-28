@@ -8,8 +8,8 @@
 
 <view style="margin-top: 30rpx;">
   <block wx:if="{{!hasUserInfo}}">
-    <button class="confirm-btn" wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
-    <button class="confirm-btn" wx:else open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <button class="confirm-btn bg-yellow" wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 点此获取头像昵称以保证正常使用 </button>
+    <button class="confirm-btn bg-yellow" wx:else open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 点此获取头像昵称以保证正常使用 </button>
   </block>
   <view  wx:else class="flex justify-center padding-bottom-xl">
     <view class="cu-capsule radius padding-right">
@@ -26,7 +26,7 @@
 
 <view class='nav-list margin-top-xl'>
   <navigator open-type="navigate" url="/pages/{{item.name}}/{{item.name}}" class="nav-li bg-{{item.color}}"
-    wx:for="{{elements}}" wx:key>
+    wx:for="{{elements}}" wx:key="id">
     <view class="nav-title margin">{{item.title}}</view>
     <view class="nav-name margin">{{item.name}}</view>
     <text class='iconfont icon-{{item.icon}} margin'></text>

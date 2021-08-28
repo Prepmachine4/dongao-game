@@ -8,6 +8,7 @@
     "pages/graph/graph",
     "pages/home/about/about",
     "pages/home/log/log",
+    "pages/home/rule/rule",
     "pages/rank/rank",
     "pages/study/study",
     "pages/study/article/article",

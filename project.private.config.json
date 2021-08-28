@@ -35,6 +35,18 @@
           "pathName": "pages/game/QA/QA",
           "query": "level=1&QAindex=1",
           "scene": null
+        },
+        {
+          "name": "pages/graph/graph",
+          "pathName": "pages/graph/graph",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/home/rule/rule",
+          "pathName": "pages/home/rule/rule",
+          "query": "",
+          "scene": null
         }
       ]
     }

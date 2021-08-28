@@ -38,6 +38,27 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onShow: function (options) {
+    // 检查授权
+    if(!wx.getStorageSync('userInfo')){
+      wx.showToast({
+        title: '请授权个人信息',
+        icon:'error',
+        duration:3000,
+        success:()=>{
+          setTimeout(()=>{
+            wx.switchTab({
+              url: '../index/index',
+            })
+          },3000)
+        }
+      })
+      return;
+    }
+
+    // 第一次进游戏，展示规则
+    
+
+
     var that=this
     // 获取新的用户信息
     wx.cloud.callFunction({name:"login",data:{userInfo:wx.getStorageSync('userInfo')}}).then(
