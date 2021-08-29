@@ -97,5 +97,10 @@ Page({
     wx.navigateTo({
       url: `QA/QA?level=${level}&QAindex=${0}&ansList=${anslist}`,
     })
+  },
+  goRule(e){
+    wx.navigateTo({
+      url: '../home/rule/rule',
+    })
   }
 })

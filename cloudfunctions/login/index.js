@@ -14,12 +14,12 @@ exports.main = async (event, context) => {
     userInfo:event.userInfo,
     score:[0,0,0,0,0,0],
     totalScore:0,
-    level:1,
+    level:1
     }
     await db.collection("users").add({data:data})
   }
   let res=await db.collection("users").where({"openId":wxContext.OPENID}).get()
-  let rankList=(await db.collection("users").orderBy("score","desc").get()).data
+  let rankList=(await db.collection("users").orderBy("totalScore","desc").get()).data
   rankList.forEach((element,index) => {
     if(element.openId==wxContext.OPENID) res.data[0].rank=index+1
   });
@@ -28,5 +28,6 @@ exports.main = async (event, context) => {
     totalScore+=ele
   })
   res.data[0].totalScore=totalScore.toFixed(2)
+
   return res;
 }

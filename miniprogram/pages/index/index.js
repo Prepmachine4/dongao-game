@@ -47,7 +47,13 @@ Page({
       this.setData({hasUserInfo:true,userInfo:wx.getStorageSync('userInfo')})
     }
 
+    
+
+    
+  },
+  onShow:function () {
     // 同步本地和数据库中的userInfo
+    var that=this
     if(this.data.hasUserInfo&&!wx.getStorageSync('dbUserInfo').userInfo){
       console.log(111)
       wx.cloud.callFunction({
@@ -57,10 +63,9 @@ Page({
         },
       })
     }
-
-    
   },
   getUserProfile(e) {
+    var that=this
     // 推荐使用wx.getUserProfile获取用户信息，开发者每次通过该接口获取用户个人信息均需用户确认
     // 开发者妥善保管用户快速填写的头像昵称，避免重复弹窗
     wx.getUserProfile({
@@ -71,15 +76,33 @@ Page({
           hasUserInfo: true
         })
         wx.setStorageSync('userInfo', res.userInfo)
+        // 同步本地和数据库中的userInfo
+        if(this.data.hasUserInfo&&!wx.getStorageSync('dbUserInfo').userInfo){
+          wx.cloud.callFunction({
+            name:"updateUserInfo",
+            data:{
+              userInfo:that.data.userInfo
+            },
+          })
+        }
       }
     })
   },
   getUserInfo(e) {
+    var that=this
     // 不推荐使用getUserInfo获取用户信息，预计自2021年4月13日起，getUserInfo将不再弹出弹窗，并直接返回匿名的用户个人信息
     this.setData({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
     wx.setStorageSync('userInfo', res.userInfo)
+    if(this.data.hasUserInfo&&!wx.getStorageSync('dbUserInfo').userInfo){
+      wx.cloud.callFunction({
+        name:"updateUserInfo",
+        data:{
+          userInfo:that.data.userInfo
+        },
+      })
+    }
   },
 })

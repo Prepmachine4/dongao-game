@@ -8,6 +8,13 @@
   position: absolute;
   bottom: 2%;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:column;
+}
+.buttom-bar button{
+  margin-top: 10rpx;
 }
 view.van-steps{
   position: absolute;

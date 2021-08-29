@@ -5,11 +5,13 @@
 
 <view class="container">
   <view class="bg-img"
-    style="background-image: url('https://6465-dev-5gb1g863bb2952f3-1306936285.tcb.qcloud.la/images/background.png?sign=ab45d3ff9213938f517ea27be606be4b&t=1629380515');height:95vh;">
+    style="background-image: url('https://6465-dev-5gb1g863bb2952f3-1306936285.tcb.qcloud.la/images/game_back.png?sign=54d1c3fde771b58b4c2875ff3e3ed9f1&t=1630240506');height:95vh;">
     <van-steps steps="{{ steps }}" active="{{ dbUserInfo.level-1 }}" direction="vertical" active-color="#f37b1d" />
 
     <view class="buttom-bar">
-      <button bindtap="goQA" class="cu-btn round lg bg-olive"
+      <button bindtap="goRule" class="cu-btn round lg bg-orange"
+      disabled="{{dbUserInfo.level==7?true:false}}">游戏规则</button>
+      <button  bindtap="goQA" class="cu-btn round lg bg-olive"
         disabled="{{dbUserInfo.level==7?true:false}}">开始闯关</button>
     </view>
   </view>
