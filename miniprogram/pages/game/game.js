@@ -102,5 +102,26 @@ Page({
     wx.navigateTo({
       url: '../home/rule/rule',
     })
+  },
+  restart(e){
+    var that=this
+    wx.showModal({
+      title: '提示',
+      content: '点击确定将会清空您的答题分数，闯关将从头开始',
+      success (res) {
+        if (res.confirm) {
+          wx.cloud.callFunction({
+            name:"restart"
+          }).then((res)=>{
+            let data=res.result.data[0]
+            wx.setStorageSync('dbUserInfo', data)
+            that.setData({dbUserInfo:res.result.data[0]})
+          })
+          // 刷新缓存
+        } else if (res.cancel) {
+          console.log('用户点击取消')
+        }
+      }
+    })
   }
 })

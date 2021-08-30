@@ -28,7 +28,7 @@ exports.main = async (event, context) => {
     })
   });
 
-  score=0.8*score+0.2*((50-time)/50)
+  score=0.8*score+0.2*(50-time)
   
   // 更新个人信息
   if(correct>=4){

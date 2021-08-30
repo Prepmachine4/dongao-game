@@ -5,7 +5,7 @@
     <view></view>
     <view class='margin-top-sm'>游戏一共6关，每关5道题，一道题10分</view>
     <view class='margin-top-sm '>分数由时间和正确数共同决定，计算公式如下：</view>
-    <view class='margin-top-sm'> 当前关总分数=0.8*（10分*答对题目数)+0.2*((50s-答题时间)/50)</view>
+    <view class='margin-top-sm'> 当前关总分数=0.8*（10分*答对题目数)+0.2*(50s-答题时间)</view>
     <view class='margin-top-sm text-bold'>过关要求：答对4题以上</view>
     <view class='margin-top-sm '>赶快开始闯关吧！</view>
   </view>

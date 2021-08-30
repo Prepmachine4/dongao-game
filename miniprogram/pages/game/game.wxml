@@ -10,9 +10,11 @@
 
     <view class="buttom-bar">
       <button bindtap="goRule" class="cu-btn round lg bg-orange"
-      disabled="{{dbUserInfo.level==7?true:false}}">游戏规则</button>
-      <button  bindtap="goQA" class="cu-btn round lg bg-olive"
-        disabled="{{dbUserInfo.level==7?true:false}}">开始闯关</button>
+      >游戏规则</button>
+      <button wx:if="{{dbUserInfo.level<7}}" bindtap="goQA" class="cu-btn round lg bg-olive"
+        >开始闯关</button>
+      <button  wx:else bindtap="restart" class="cu-btn round lg bg-olive"
+        >重新开始</button>
     </view>
   </view>
 
